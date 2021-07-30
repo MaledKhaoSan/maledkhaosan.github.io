@@ -92,7 +92,10 @@ svg{
 
 /* illustration-Image */
 .illustration1-1,
-.illustration1-2{
+.illustration1-2,
+.illustration1-3,
+.illustration1-4,
+.illustration1-5{
     position: absolute;
     width: 26%;
     top: 50%;
