@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title> AntiCyberBully </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:700' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/illus.css">
+
+    
+    
+    <!-- //Magic-Scrolling -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+    <!-- //Magic-Mouse -->
+    <link rel="stylesheet" href="https://res.cloudinary.com/veseylab/raw/upload/v1597754760/magicmouse/magic-mouse-1.0.css" />
+    <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1597754761/magicmouse/magic_mouse-1.0.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scaleable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
+
+</head>
+
+
+
+
+
+<body>
+ <!-- ตรงนี้คือส่วนของ Loading Screen -->
+    <div class="overlay" id="loading">
+      <div class="overlayDoor"></div>
+      <div class="overlayContent">
+        <div id="loader">
+          <div id="box"></div>
+          <div id="hill"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<!--            Storyboard            -->  
+<section id="TESTsec" >
+  <section class="" >
+    <div class="SectionRelativeSize Storyboard---0" style="z-index: 51;">
+      <img src="/img/Scene1/leavesBackground.png" class="illustration-BackGround" style="visibility:unset;">
+    </div>
+  </section>
+
+
+  <!--            School Opening Scene          -->
+  <section class="">
+    <div class="SectionRelativeSize Storyboard---1" style="z-index: 52;">
+      <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+      <img src="/img/Scene1/MainImageTest2.png" class="illustration-BackGround" style="visibility: unset;">
+      <!-- SchoolOpening -->
+        <img src="/img/Scene1/schoolBackground.png" class="illustration1-BackGround" id="SchoolOpeningBackground">
+        <img src="/img/Scene1/school1.png" class="illustration1-1" id="SchoolOpening1" >
+        <!-- <img src="/img/Scene1/school2.png" class="illustration1-2" id="SchoolOpening2" > -->
+      <!-- Leaves Transition -->
+        <img src="/img/Scene1/LeavesTransition1.png" class="illustration1-Leaves">
+        <!-- <img src="/img/Scene1/MainImageTest.png" class="illustration1-LeavesBackGround" style="z-index: -1;"> -->
+      <!-- Leaves Particles -->
+      <img src="/img/Scene1/Particle1.png" class="LeavesParticle0" style="z-index: 52;">
+      <img src="/img/Scene1/Particle1.png" class="LeavesParticle1" style="z-index: 52;">
+      <img src="/img/Scene1/Particle1.png" class="LeavesParticle2" style="z-index: 52;">
+      <img src="/img/Scene1/Particle1.png" class="LeavesParticle3" style="z-index: 52;">
+      <img src="/img/Scene1/Particle1.png" class="LeavesParticle4" style="z-index: 52;">
+      <img src="/img/Scene1/Particle1.png" class="LeavesParticle5" style="z-index: 52;">
+      <!-- Text -->
+      <img src="/img/Scene1/schoolText1.png" class="schoolText1" style="z-index: 52;">
+      <img src="/img/Scene1/schoolText2.png" class="schoolText2" style="z-index: 52;">
+      <img src="/img/Scene1/schoolText3.png" class="schoolText3" style="z-index: 52;">
+      <img src="/img/Scene1/schoolText4.png" class="schoolText4" style="z-index: 52;">
+    </div>
+  </section>
+  <!--            School Opening Scene          -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--            Main Character Introduce Scene [1]         -->
+  <section>
+    <div class="SectionRelativeSize Storyboard---2" style="z-index: 51;">
+      <img src="/img/Scene1/MainImageTest.png" class="illustration-BackGround" style="visibility: unset;">
+      <img src="/img/Scene2/MCBackground.png" class="illustration2-MC1Background">
+      <img src="/img/Scene2/MC1.png" class="illustration2-MC1" >
+      <div>
+        <img src="/img/Scene2/MC1Text1.png" class="MC1Text1" >
+        <img src="/img/Scene2/MC1Text2.png" class="MC1Text2" >
+        <img src="/img/Scene2/MC1Text3.png" class="MC1Text3" >
+      </div>
+      <!-- Transition -->
+      <img src="/img/Scene2/MC1Gradient.png" class="MC1Gradient_Background">
+    </div>
+  </section>
+
+
+  <!--            Main Character Introduce Scene [2]         -->
+  <section>
+    <div class="SectionRelativeSize Storyboard---3" style="z-index: 50;">
+      <img src="/img/Scene1/MainImage00.png" class="illustration-BackGround" style="visibility: hidden;">
+      <!-- Main character Background -->
+      <img src="/img/Scene2/MC2Background.png" class="illustration2_MC2Background">
+      <!-- Main character Illus -->
+      <img src="/img/Scene2/MC2.png" class="illustration2-MC2">
+      <img src="/img/Scene2/MC2frame.png" class="illustration2-MCframe" style="visibility: unset;">
+      <!-- Main character Text -->
+      <img src="/img/Scene2/MC2Text1.png" class="MC2Text1" style="z-index: 40;">
+      <img src="/img/Scene2/MC2Text2.png" class="MC2Text2" style="z-index: 40;">
+      <img src="/img/Scene2/MC2Text3.png" class="MC2Text3" style="z-index: 40;">
+      <img src="/img/Scene2/MC2Text4.png" class="MC2Text4" style="z-index: 50;">
+      <img src="/img/Scene2/MC2Text5.png" class="MC2Text5" style="z-index: 50;">
+
+
+      <!-- Classroom Band Logo -->
+      <img src="/img/Scene2/ClassroomBand1.png" class="ClassroomBand1" style="z-index: 49;">
+
+      <svg>
+        <filter id="noise" x='0%' y='0%' width='100%' height='100%'>
+            <feTurbulence baseFrequency="0.03 0.07" result="NOISE" numOctaves="1" id="ClassroomBandEffect"/>
+            <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="20" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+
+        </filter>
+    </svg>
+
+      <!-- Classroom present Background-->
+      <img src="/img/Scene2/ClassroomBackground.png" class="ClassroomBackground1" style="z-index: 48;">
+      <img src="/img/Scene2/ClassroomBackground.png" class="ClassroomBackground2" style="z-index: 48;">
+      <!-- Classroom present Transition [Sci-math]-->
+      <img src="/img/Scene2/ClassroomPresent1_Paper.png" class="ClassroomPresent1_Paper" style="z-index: 53;">
+      <img src="/img/Scene2/ClassroomPresent1.png" class="illustration4-ClassroomPresent1" style="z-index: 52;">      
+      <!-- Classroom present Transition [English]-->
+      <img src="/img/Scene2/ClassroomPresent2.png" class="illustration4-ClassroomPresent2" style="z-index: 51;">
+      <!-- Classroom present Transition [Music Education]-->
+      <img src="/img/Scene2/ClassroomPresenT3.png" class="illustration4-ClassroomPresent3" style="z-index: 51;">
+      
+    </div>
+  </section>
+  <!--            Main Character Introduce Scene          -->
+
+
+
+
+  <!-- ข้อความ -->
+  <section class="">
+    <div class="SectionRelativeSize Storyboard---0" style="z-index: 55;">
+      <!-- <img src="/img/Scene2/ClassroomBackground.png" class="illustration-BackGround" style="visibility: hidden;" data-scrollcolor="white"> -->
+      <img src="/img/Scene2/ClassroomBackground.png" class="illustration-BackGround" style="visibility: hidden;">
+    </div>
+  </section>
+  <!-- ข้อความ -->
+
+
+
+
+
+
+
+  <!--            school balcony & mystery student Scene [3]         -->
+  <section class="">
+    <div class="SectionRelativeSize Storyboard---4" style="z-index: 51;">
+      <img src="/img/Illus/StoryboardFrame2.png" class="BalconyFrame" style="z-index: 60;">
+      <div class="SectionRelativeSizeTest">
+        <!-- Balcony Background -->
+        <img src="/img/Scene1/MainImage00.png" class="illustration-BackGround" style="visibility: hidden;">
+        <!-- <img src="/img/Scene3/bestStudentBackground.png" class="balcony-Background" style="z-index: 49;"> -->
+        <img src="/img/Scene3/schoolBalconyBackground.png" class="balcony-Background" style="z-index: 50;">
+        <svg id="BalconyBackgroundTransitionIn" viewBox="0 0 400 1080" style="z-index: 55;">
+          <defs>
+            <clipPath id="CropIn">
+              <path id="TransitionIn" d="M 0 0 L 400 0 L 400 400 L 0 400 z"/>
+            </clipPath>
+          </defs>
+
+          <g id="clipPathIn" clip-path="url(#CropIn)">
+            <image width="400" href="/img/Scene3/schoolBalconyBackgroundTransition.png"/>
+          </g>
+        </svg>
+        <!-- Main character& students  Transition -->
+        <img src="/img/Scene3/MC_Body.png" class="MC_body" style="z-index: 51;">
+        <img src="/img/Scene3/people1_body.png" class="people1_body" style="z-index: 56;">
+        <img src="/img/Scene3/people2_body.png" class="people2_body" style="z-index: 53;">
+        <img src="/img/Scene3/people3_body.png" class="people3_body" style="z-index: 53;">
+        <img src="/img/Scene3/people4_body.png" class="people4_body" style="z-index: 54;">
+        <!-- <img src="/img/Scene3/SC_body.png" class="Balcony_SCbody" style="z-index: 52;"> -->
+        <!-- SchoolBalcony Maincharacter Text [3] -->
+        <img src="/img/Scene3/BalconyText1.png" class="BalconyText1" style="z-index: 50;">
+        <img src="/img/Scene3/BalconyText2.png" class="BalconyText2" style="z-index: 50;">
+
+
+        <!-- school balcony Transition -->
+        <img src="/img/Scene3/schoolBalconyTransition.png" class="BalconyTransition" style="z-index: 56;">
+        <svg id="BalconyBackgroundTransitionFrame" viewBox="0 0 400 1080" style="z-index: 55;">
+          <defs>
+            <clipPath id="CropOut">
+              <path id="TransitionCrop" d="M 0 0 L 400 0 L 400 400 L 0 400 z"/>
+            </clipPath>
+          </defs>
+
+          <g id="clipPathOut" clip-path="url(#CropOut)">
+            <image width="400" href="/img/Scene4/Activities1.png"/>
+          </g>
+        </svg>
+        <!--               School Activities Showcase Scene [4]               -->
+        <!-- School Activities Background[4] -->
+        <!-- Activities 2 -->
+        <img src="/img/Scene4/Activities2.png" class="Activities2" style="z-index: 51;">
+        <!-- Activities 3 -->
+        <img src="/img/Scene4/Activities3.png" class="Activities3" style="z-index: 51;">
+        <img src="/img/Scene4/Activities3BadmintonPlayer.png" class="A3BadmintonPlayer" style="z-index: 51;">
+        <!-- Activities 4 -->
+        <img src="/img/Scene4/Activities1.png" class="Activities4" style="z-index: 51;">
+        <!-- School Activities Text[4] -->
+        <img src="/img/Scene4/Activities1Text.png" class="Activities1Text" style="z-index: 55;">
+        <img src="/img/Scene4/Activities2Text.png" class="Activities2Text" style="z-index: 55;">
+        <img src="/img/Scene4/Activities3Text.png" class="Activities3Text" style="z-index: 55;">
+        <img src="/img/Scene4/Activities3Text.png" class="Activities4Text" style="z-index: 55;">
+        
+        <!--               School Activities Showcase Scene [4]               -->
+
+        <!-- School Locker Text Introl Scene [4] -->
+        <h9 class="LockerText1" style="z-index: 39;">เป็นเรื่องปกติที่จะเห็นนักเรียนถือ</h9>
+        <h9 class="LockerText2" style="z-index: 37;">กระเป๋าหนักๆระหว่างทางไปโรงเรียน</h9>
+        <h9 class="LockerText3" style="z-index: 35;"> เพื่อช่วยแบ่งเบานักเรียน</h9>
+        <h9 class="LockerText4" style="z-index: 33;">โรงเรียนมัธยมปัญญาร่วมฤดี เลยจัดหาล็อคเกอร์</h9>
+        <h9 class="LockerText5" style="z-index: 31;">ไว้สำหรับนักเรียนทุกคนโดยเฉพาะ</h9>
+        <!-- School Locker Illus Introl Scene [4] -->
+      </div>
+    </div>
+  </section>
+  <!--            school balcony & mystery student Scene [3]         -->
+
+
+
+
+
+
+
+
+  
+
+
+
+  <!--               School Lockers Scene [5]               -->
+  <section class="">
+    <div class="SectionRelativeSize Storyboard---5" style="z-index: 52;">
+      <!-- School Lockers Scene Background -->
+      <img src="/img/Scene1/MainImage00.png" class="illustration-BackGround" style="visibility: hidden;">
+      <!-- School Lockers Frame -->
+      <img src="/img/Illus/StoryboardFrame4.png" class="LockerFrame" style="z-index: 55;">
+      <div id="LockerGroup">
+        <img src="/img/Scene5/LockerBackground1.png" class="LockerBackground1">
+        <img src="/img/Scene5/LockerBackground2.png" class="LockerBackground2" style="z-index: 50;">
+        <img src="/img/Scene5/LockerBackground3.png" class="LockerBackground3" style="z-index: 49;">
+        <img src="/img/Scene5/LockerBackground4.png" class="LockerBackground4" style="z-index: 50;">
+        <!-- Main character Body  -->
+        <img src="/img/Scene5/Body1.png" class="Body1_LockerScene" style="z-index: 54;">
+        <img src="/img/Scene5/Body2.png" class="Body2_LockerScene" style="z-index: 54;">
+        <img src="/img/Scene5/Hand1.png" class="Hand1_LockerScene" style="z-index: 53;">
+        <img src="/img/Scene5/Hand2.png" class="Hand2_LockerScene" style="z-index: 53;">
+        <!-- People Body -->
+        <img src="/img/Scene5/LockerPeople1.png" class="LockerPeople1" style="z-index: 52;">
+        <img src="/img/Scene5/LockerPeople2.png" class="LockerPeople2" style="z-index: 51;">
+        <img src="/img/Scene5/LockerPeople3.png" class="LockerPeople3" style="z-index: 51;">
+        <!-- Secret character Body -->
+        <img src="/img/Scene5/LockerSC_Body1.png" class="LockerSC_Body1" style="z-index: 51;">
+      </div>
+      <!-- Reactions  -->
+      <img src="/img/Scene5/MC_ReactionBase.png" class="MC_ReactionBase" style="z-index: 61;">
+      <img src="/img/Scene5/MC_ReactionText.png" class="MC_ReactionText" style="z-index: 62;">
+      <img src="/img/Scene5/MC_ReactionBody.png" class="MC_ReactionBody" style="z-index: 63;">
+      <!-- Main character Text  -->
+      <img src="/img/Scene5/LockerMCText1.png" class="LockerMCText1" style="z-index: 56;">
+      <img src="/img/Scene5/LockerMCText2.png" class="LockerMCText2" style="z-index: 56;">
+      <img src="/img/Scene5/LockerMCText3.png" class="LockerMCText3" style="z-index: 65;">
+      <img src="/img/Scene5/LockerMCText4.png" class="LockerMCText4" style="z-index: 65;">
+      <img src="/img/Scene5/LockerMCText5.png" class="LockerMCText5" style="z-index: 56;">
+      <img src="/img/Scene5/LockerMCText6.png" class="LockerMCText6" style="z-index: 56;">
+    </div>
+  </section>
+
+
+  <!--               School Lockers Scene [5]               -->
+
+  <!-- ฉากประกอบ -->
+  <!-- <section class="">
+    <div class="SectionRelativeSize Storyboard---0" style="z-index: 55;">
+      <img src="/img/Scene1/leavesBackground.png" class="illustration-BackGround" style="visibility: visible;">
+    </div>
+  </section> -->
+  <!-- ฉากประกอบ -->
+
+
+
+  <!--               lunch break Scene [6]               -->
+  <section class="">
+    <div class="SectionRelativeSize Storyboard---6" style="z-index: 55;">
+    <!-- lunch break Background -->
+      <img src="/img/Illus/StoryboardBG.png" class="illustration-BackGround" style="visibility: unset;">
+
+      <!-- Lunch break [1] -->
+      <img src="/img/Scene6/canteen_Background.png" class="canteen_Background" style="z-index: 50;">
+      <img src="/img/Scene6/canteen_Body.png" class="canteen_Body" style="z-index: 53;">
+      <!-- Food -->
+      <img src="/img/Scene6/canteen_Food1.png" class="canteen_Food1" style="z-index: 52;">
+      <img src="/img/Scene6/canteen_Food2.png" class="canteen_Food2" style="z-index: 52;">
+      <img src="/img/Scene6/canteen_Students.png" class="canteen_Students" style="z-index: 51;">
+
+      <!-- Lunch break [2] -->
+      <!-- <img src="/img/Scene6/canteen_Food3.png" class="canteen_Food3" style="z-index: 51;"> -->
+      <img src="/img/Scene6/canteen_cameraFlash.png" class="canteen_cameraFlash" style="z-index: 60; opacity: 0;">
+      <img src="/img/Scene6/canteen_cameraUI.png" class="canteen_cameraUI" style="z-index: 51;">
+      <svg id="LunchTransitionCrop" viewBox="0 0 400 1080" style="z-index: 49;">
+        <defs>
+          <clipPath id="LunchCropIn">
+            <path id="LunchtransitionCrop" d="M 0 0 L 400 0 L 400 400 L 0 400 z"/>
+          </clipPath>
+        </defs>
+
+        <g id="LunchCrop" clip-path="url(#LunchCropIn)">
+          <image width="400" href="/img/Scene6/canteen_Food3.png"/>
+        </g>
+      </svg>
+
+      <!-- TEXT -->
+      <h9 class="canteenText1" style="z-index: 50;">โรงอาหาร</h9>
+      <!-- Main character Text  -->
+      <img src="/img/Scene6/canteen_MCText1.png" class="canteen_MCText1" style="z-index: 56;">
+      <img src="/img/Scene6/canteen_MCText2.png" class="canteen_MCText2" style="z-index: 56;">
+      <img src="/img/Scene6/canteen_MCText3.png" class="canteen_MCText3" style="z-index: 56;">
+      <img src="/img/Scene6/canteen_MCText4.png" class="canteen_MCText4" style="z-index: 56;">
+
+    </div>
+  </section>
+  <!--               lunch break Scene [6]               -->
+
+
+
+
+  <!--               Toilet Scene [7]               -->
+
+  <section class="">
+    <div class="SectionRelativeSize Storyboard---7" style="z-index: 52;">
+      <img src="/img/Scene1/leavesBackground.png" class="illustration-BackGround" style="visibility: hidden;">
+      <!-- <img src="/img/Scene6/canteen_cameraFlash.png" class="toilet_cameraFlash" style="z-index: 60;"> -->
+      <!-- Washing hand [1] -->
+      <img src="/img/Scene7/toilet_washing1.png" class="toilet_washing1" style="z-index: 55;">
+      <!-- Main Background [OUT] -->
+      <img src="/img/Scene7/toilet_BGOut1.png" class="toilet_BGOut1" style="z-index: 54;">
+      <img src="/img/Scene7/toilet_BGIn1.png" class="toilet_BGIn1" style="z-index: 50;">
+
+      <!-- toilet_Background2 -->
+      <svg id="toiletSVGID1"viewBox="0 0 400 400" style="z-index: 60;">
+        <defs>
+          <clipPath id="ToiletclipPath">
+            <rect id="toiletRectID1" x="0" y="0" width="100%" height="100%" />
+          </clipPath>
+        </defs>
+
+        <!-- Toilet MainBackground[2] illus -->
+        <g clip-path="url(#ToiletclipPath)" style="z-index: 5;">
+          <!-- <image id="BGTEST" width="400" href="/img/Scene3/bestStudentBackground.png"/> -->
+          <image id="toilet2_MainBG" z-index="10" x="90" href="/img/Scene7/toilet2_MainBG.png"/>
+          <image id="toilet2_SCBody1" z-index="11" width="400" href="/img/Scene7/toilet2_SCBody1.png"/>
+          <image id="toilet2_Body1" z-index="12" x="90" href="/img/Scene7/toilet2_Body1.png"/>
+        </g>
+      </svg>
+
+
+      
+
+
+    </div>
+  </section>
+  <!--               Toilet Scene [7]               -->
+
+
+
+
+
+
+  <!-- ฉากประกอบ -->
+  <section class="">
+    <div class="SectionRelativeSize Storyboard---0" style="z-index: 55;">
+      <img src="/img/Scene1/leavesBackground.png" class="illustration-BackGround" style="visibility: unset;">
+    </div>
+  </section>
+  <!-- ฉากประกอบ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--               Online Class Scene [8]               -->
+  <section class="">
+    <div class="SectionRelativeSize Storyboard---8" style="z-index: 50;">
+      <!-- Online class Background -->
+      <img src="/img/Scene1/MainImageTest2.png" class="illustration-BackGround" style="visibility: hidden;">
+      <!-- polaroid -->
+      <img src="/img/Scene8/polaroid1.png" class="polaroid1" style="z-index: 51;">
+      <img src="/img/Scene8/polaroid2.png" class="polaroid2" style="z-index: 51;">
+      <img src="/img/Scene8/polaroid3.png" class="polaroid3" style="z-index: 51;">
+
+      <img src="/img/Scene8/polaroid1.png" class="polaroid4" style="z-index: 51;">
+      <img src="/img/Scene8/polaroid1.png" class="polaroid5" style="z-index: 51;">
+      <img src="/img/Scene8/polaroid4.png" class="polaroid6" style="z-index: 51;">
+
+      <img src="/img/Scene8/polaroid3.png" class="polaroid7" style="z-index: 51;">
+      <img src="/img/Scene8/polaroid4.png" class="polaroid8" style="z-index: 51;">
+      <img src="/img/Scene8/polaroid1.png" class="polaroid9" style="z-index: 51;">
+      <!-- polaroid text -->
+      <h9 class="polaroidText1" style="z-index: 60;">ยังนึกถึงภาพจำเดิมๆอยู่รึเปล่า<br>ระบบการศึกษาแบบเก่าอันดีงาม<br>และห้องเรียนสุดคลาสสิค</h9>
+      <h9 class="polaroidText2" style="z-index: 60;">บทเรียนเก่าๆ<br>หลักสูตรในอดีต<br>เยอะและขลัง<br>ดีแต่ไม่พัฒนา<br>ห้องเรียนแออัด<br>อุปกรณ์ด้อยและ<br>วัดผลจากข้อสอบ<br>เมื่อคุณครูสอน<br>นักเรียนแค่จด<br>...</h9>
+      <h9 class="polaroidText3" style="z-index: 60;">แต่จะดีกับนักเรียนทุกคนจริงๆอย่างงั้นหรอ</h9>
+      <!-- Phone Background -->
+      <img src="/img/Scene8/PhoneHolding_Background.png" class="PhoneHolding_Background">
+      <img src="/img/Scene8/PhoneScreen2.png" class="PhoneScreen_Background" style="z-index: 50;">
+
+      <svg id="PhoneSVGID1"viewBox="0 0 400 400" style="z-index: 55;">
+        <defs>
+          <clipPath id="PhoneClipPath">
+            <rect id="PhoneRectID1" x="0" y="0" width="100%" height="100%" />
+          </clipPath>
+        </defs>
+
+        <g clip-path="url(#PhoneClipPath)" style="z-index: 5;">
+          <image id="PhoneNotification1" width="123%" x="-24%" y="-2%" href="/img/Scene8/PhoneNotification1.png"/>
+          <image id="PhoneNotification2" width="123%" x="-24%" y="-2%" href="/img/Scene8/PhoneNotification2.png"/>
+          <image id="PhoneNotification3" width="123%" x="-24%" y="-2%" href="/img/Scene8/PhoneNotification3.png"/>
+        </g>
+      </svg>
+      <!-- Phone Main character Text -->
+      <img src="/img/Scene8/Phone_MCText1.png" class="Phone_MCText1" style="z-index: 52;">
+      <img src="/img/Scene8/Phone_MCText2.png" class="Phone_MCText2" style="z-index: 52;">
+      <img src="/img/Scene8/Phone_MCText3.png" class="Phone_MCText3" style="z-index: 52;">
+      <img src="/img/Scene8/Phone_MCText4.png" class="Phone_MCText4" style="z-index: 52;">
+
+    </div>
+  </section>
+  <!--               Online Class Scene [8]               -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ฉากประกอบ -->
+  <section class="">
+    <div class="SectionRelativeSize Storyboard---0" style="z-index: 55;">
+      <img src="/img/Scene1/leavesBackground.png" class="illustration-BackGround" style="visibility: visible;">
+    </div>
+  </section>
+  <!-- ฉากประกอบ -->
+
+
+  <!--               School Slogan Ideas Scene [9]               -->
+<!--               School Slogan Ideas Scene [9]               -->
+
+
+  <!-- Ending Scene [10] -->
+  <section class="">
+    <div class="SectionRelativeSize Storyboard---10" style="z-index: 50;">
+      <!-- Background -->
+      <div id="EndingGroup">
+        <img src="/img/Scene2/MC2Background.png" class="illustration-BackGround" style="visibility: visible;">
+        <img src="/img/Scene10/window1.png" class="Ending_window" style="z-index: 54;">
+        <img src="/img/Scene10/windowframe.png" class="Ending_windowFrame" style="z-index: 60;">
+        <!-- Illus -->
+        <img src="/img/Scene10/Body1.png" class="Ending_Body1" style="z-index: 56;">
+        <!-- Secret character Symbol -->
+        <img src="/img/Scene10/Ending_SCbody1.png" class="Ending_SCbody1" style="z-index: 53;">
+        <img src="/img/Scene10/symbol1.png" class="symbol1" style="z-index: 55;">
+        <img src="/img/Scene10/symbol2.png" class="symbol2" style="z-index: 55;">
+      <!-- Secret character Text -->
+      </div>
+      <img src="/img/Scene10/EndingMc_Text1.png" class="EndingMc_Text1" style="z-index: 1;">
+      <img src="/img/Scene10/EndingMc_Text2.png" class="EndingMc_Text2" style="z-index: 56;">
+      <img src="/img/Scene10/EndingMc_Text3.png" class="EndingMc_Text3" style="z-index: 56;">
+      <img src="/img/Scene10/EndingMc_Text4.png" class="EndingMc_Text4" style="z-index: 56;">
+    </div>
+  </section>
+  <!-- Ending Scene [10] -->
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Script หน้าโหลด-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <script src="js/style.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/fade-in.js"></script>
+    
+    <script type="text/javascript">
+      options = {
+        "cursorOuter": "circle-basic",
+        "hoverItemMove": false,
+        "defaultCursor": false,
+        "outerWidth": 30,
+        "outerHeight": 30
+      }; 
+       magicMouse(options);
+        </script>
+
+
+    <!-- //สคริปต์ -->
+    <script src="js/Scrolling-Animations.js"></script>
+    <script src="js/zooming.js"></script>
+
+</body>
+
+

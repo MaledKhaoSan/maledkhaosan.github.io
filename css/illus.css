@@ -1,0 +1,1151 @@
+/*-------------- Default Settings -------------- */
+body {
+    background-color: #000000;
+    font-family: 'Sarabun';
+    /* background-image: url("/img/Scene1/MainImageTest.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%; */
+}
+section{
+    padding: 0%;
+    position: relative;
+}
+/*-------------- Default Settings -------------- */
+/* 
+
+
+
+
+*/
+/*-------------- Storyboard scale -------------- */
+.SectionRelativeSizeTest{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.SectionRelativeSize{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+svg{
+    position: absolute;
+}
+.Storyboard---0,
+.Storyboard---1,
+.Storyboard---2,
+.Storyboard---3,
+.Storyboard---4,
+.Storyboard---5,
+.StoryText---5,
+.Storyboard---6,
+.Storyboard---7,
+.Storyboard---8,
+.Storyboard---10{
+    position: relative;
+    margin: 0%;
+}
+/*-------------- Storyboard scale -------------- */
+
+
+
+
+
+
+/*----------------- Default Background & Image scale ----------------- */
+.illustration-BackGround{
+    left: 0%;
+    top: 0%;
+    width: 100%;
+}
+/*----------------- Default Background & Image scale ----------------- */
+
+
+
+
+
+
+
+/*---------------- Scene 1 scale ---------------- */
+/* illustration-BackGround */
+.illustration1-BackGround{
+    left: -55%;
+    top: -27%;
+    width: 155%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.illustration1-LeavesBackGround{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* illustration-Image */
+.illustration1-1,
+.illustration1-2{
+    position: absolute;
+    width: 26%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.illustration1-Leaves{
+    left: -55%;
+    top: -27%;
+    width: 155%;
+    position: absolute;
+}
+/* Leaves Particles */
+.LeavesParticle0{
+    width: 2%;
+    left: -50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.LeavesParticle1{
+    width: 3%;
+    left: -50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.LeavesParticle2{
+    width: 7%;
+    left: -50%;
+    top: 25%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.LeavesParticle3{
+    width: 3.5%;
+    left: -50%;
+    top: 75%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.LeavesParticle4{
+    width: 9%;
+    left: -50%;
+    top: 80%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.LeavesParticle5{
+    width: 9%;
+    left: -50%;
+    top: 40%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+/* School Text */
+.schoolText1{
+    width: 20%;
+    left: 25%;
+    top: 34%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.schoolText2{
+    width: 14%;
+    left: 77%;
+    top: 35%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.schoolText3{
+    width: 13%;
+    left: 74%;
+    top: 41%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.schoolText4{
+    width: 15%;
+    left: 77%;
+    top: 56%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+/*---------------- Scene 1 scale ---------------- */
+
+
+
+
+
+
+
+/*---------------- Scene 2 Main-Characters Introdice scale ---------------- */
+/* illustration-BackGround */
+.illustration2-MC1Background{
+    position: absolute;
+    width: 100%;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.illustration2_MC2Background{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* illustration-Image */
+.illustration2-MC1{
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.illustration2-MC2{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    /* filter: url(#noise) */
+}
+
+.illustration2-MCframe{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%); 
+}
+/* illustration-Transition */
+.MC1Gradient_Background{
+    position: absolute;
+    width: 100%;
+    top: 90%;
+    left: 50%;
+    opacity: 0.5;
+    transform: translate(-50%, -50%); 
+}
+
+/* illustration-Text [MC1]*/
+.MC1Text1{
+    position: absolute;
+    width: 30%;
+    top: 60%;
+    left: 80%;
+    transform: translate(-50%, -50%); 
+}
+
+.MC1Text2{
+    position: absolute;
+    width: 30%;
+    top: 75%;
+    left: 20%;
+    transform: translate(-50%, -50%); 
+}
+
+.MC1Text3{
+    position: absolute;
+    width: 30%;
+    top: 75%;
+    left: 80%;
+    transform: translate(-50%, -50%); 
+}
+/* illustration-Text [MC2]*/
+.MC2Text1{
+    position: absolute;
+    width: 25%;
+    top: 40%;
+    left: 80%;
+    transform: translate(-50%, -50%); 
+}
+.MC2Text2{
+    position: absolute;
+    width: 25%;
+    top: 50%;
+    left: 84%;
+    transform: translate(-50%, -50%); 
+}
+.MC2Text3{
+    position: absolute;
+    width: 25%;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%); 
+}
+.MC2Text4{
+    position: absolute;
+    width: 55%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.MC2Text5{
+    position: absolute;
+    width: 20%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+/*---------------- Scene 2 Main-Characters Introdice scale ---------------- */
+
+
+
+
+
+
+
+
+/*---------------- Scene 2 Classroom Present Scene scale ---------------- */
+/* illustration-BackGround */
+.ClassroomBand1{
+    position: absolute;
+    width: 18%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    filter: url(#noise)
+}
+.ClassroomBackground1,
+.ClassroomBackground2{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* illustration-Image */
+.ClassroomPresent1_Paper,
+.illustration4-ClassroomPresent1{
+    position: absolute;
+    width: 70%;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.illustration4-ClassroomPresent2{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+.illustration4-ClassroomPresent3{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+/*---------------- Scene 2 Classroom Present Scene scale ---------------- */
+
+
+
+
+
+
+
+/*---------------- Scene 3 School Balcony ---------------- */
+/* illustration-BackGround */
+.balcony-Background{
+    position: absolute;
+    width: 130%;
+    top: 50%;
+    left: 0%;
+    transform: translate(-0%, -50%);
+}
+.BalconyBackgroundTransition{
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    top: 0%;
+    left: 0%;
+}
+.BalconyTransition{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%, -50%);
+}
+#BalconyBackgroundTransitionIn{
+    width:100%;
+    max-width: 100%;
+    visibility:hidden;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+#BalconyBackgroundTransitionFrame{
+    width:100%;
+    max-width: 100%;
+    visibility:hidden;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+.BalconyFrame{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* illustration-Image */
+.MC_body{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.people1_body{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.people2_body{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+}
+
+.people3_body{
+    position: absolute;
+    width: 100%;
+    top: 55%;
+    left: 110%;
+    transform: translate(-50%, -50%);
+}
+
+.people4_body{
+    position: absolute;
+    width: 100%;
+    top: 51%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.Balcony_SCbody{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+/* School Balcony Main character Text */
+.BalconyText1{
+    position: absolute;
+    width: 21%;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+.BalconyText2{
+    position: absolute;
+    width: 19%;
+    top: 38%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+}
+/*---------------- Scene 3 School Balcony ---------------- */
+
+
+
+
+
+/*---------- Scene 4 School Activites Showcase ---------- */
+/* Activites-BackGround */
+/* Activites-Image */
+.Activities1{
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Activities2,
+.Activities3,
+.Activities4{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%, -50%);
+}
+
+.A3BadmintonPlayer{
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    left: 150%;
+    transform: translate(-50%, -50%);
+}
+
+.Activities1Text{
+    position: absolute;
+    width: 15%;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.Activities2Text{
+    position: absolute;
+    width: 15%;
+    top: 15%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+.Activities3Text{
+    position: absolute;
+    width: 15%;
+    top: 15%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+.Activities4Text{
+    position: absolute;
+    width: 15%;
+    top: 15%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+/*---------- Scene 4 School Activites Showcase ---------- */
+
+
+
+
+
+
+
+
+/*---------- Scene 5 School Lockers Scene---------- */
+/* School Lockers-BackGround */
+.LockerFrame{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.LockerBackground1{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.LockerBackground2{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+.LockerBackground3,
+.LockerBackground4{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    display: none;
+    transform: translate(-50%, -50%);
+}
+/* School Lockers-Image */
+.Body1_LockerScene{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Hand1_LockerScene{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Hand2_LockerScene{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    opacity: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.Body2_LockerScene{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+/* People Body */
+.LockerPeople1,
+.LockerPeople2,
+.LockerPeople3{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Secret character Body Body */
+.LockerSC_Body1{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Main Character Reaction*/
+.MC_ReactionBase,
+.MC_ReactionBody,
+.MC_ReactionText{
+    position: absolute;
+    width: 61%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+
+}
+/* Main Character Text */
+.LockerText1,
+.LockerFade1{
+    font-size: 230%;
+    color: white;
+    white-space: nowrap;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+.LockerText2,
+.LockerFade2{
+    font-size: 250%;
+    color: white;
+    white-space: nowrap;
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+
+}
+.LockerFade3,
+.LockerText3{
+    font-size: 220%;
+    color: white;
+    white-space: nowrap;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    left: 50%;
+    overflow: hidden;
+    text-align: center;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+.LockerText4,
+.LockerFade4{
+    font-size: 300%;
+    color: white;
+    white-space: nowrap;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+.LockerText5,
+.LockerFade5{
+    font-size: 320%;
+    color: white;
+    white-space: nowrap;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+.LockerMCText1{
+    position: absolute;
+    width: 20%;
+    top: 22%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+}
+
+.LockerMCText2{
+    position: absolute;
+    width: 16%;
+    top: 70%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+}
+.LockerMCText3{
+    position: absolute;
+    width: 18%;
+    top: 28%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+}
+
+.LockerMCText4{
+    position: absolute;
+    width: 15%;
+    top: 68%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+}
+
+.LockerMCText5{
+    position: absolute;
+    width: 15%;
+    top: 71%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+}
+.LockerMCText6{
+    position: absolute;
+    width: 18%;
+    top: 28%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+}
+
+/*---------- Scene 5 School Lockers Scene---------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------- Scene 6 Lunch Break ---------- */
+/* LunchBreak-BackGround */
+
+    .canteen_Food1,
+    .canteen_Food2,
+    .canteen_Food3,
+    .canteen_Students,
+    /* LunchBreak-Image */
+    .canteen_Background,
+    .canteen_Body,
+    .canteen_cameraUI,
+    .canteen_cameraFlash{
+        position: absolute;
+        width: 35%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* LunchBreak-Text */
+    .canteenText1{
+        font-size: 32px;
+        color: rgb(0, 0, 0);
+        white-space: nowrap;
+        position: absolute;
+        width: 100%;
+        top: 20%;
+        left: 60%;
+        text-align: left;
+        transform: translate(-50%, -50%);
+    }
+
+    #LunchTransitionCrop{
+        width:50%;
+        max-width: 100%;
+        visibility:hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -11%);
+      }
+    
+    .canteen_MCText1{
+        position: absolute;
+        width: 19%;
+        top: 39%;
+        left: 81%;
+        transform: translate(-50%, -50%);
+    }
+    .canteen_MCText2{
+        position: absolute;
+        width: 35%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .canteen_MCText3{
+        position: absolute;
+        width: 15%;
+        top: 13%;
+        left: 36%;
+        transform: translate(-50%, -50%);
+    }
+    .canteen_MCText4{
+        position: absolute;
+        width: 15%;
+        top: 71%;
+        left: 74%;
+        transform: translate(-50%, -50%);
+    }
+/*---------- Scene 6 Lunch Break ---------- */
+
+
+
+
+
+
+
+
+
+/*---------- Scene 7 School Toilet ---------- */
+/* School Toilet- Background */
+.toilet_BGOut1,
+.toilet_BGIn1{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.toilet_Background2{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.toilet_BackgroundFadeIn{
+    position: absolute;
+    width: 100%;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.toilet_cameraFlash{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* School Toilet- Illus */
+.toilet_washing1{
+    position: absolute;
+    width: 45%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* School Toilet MainBackground [2]*/
+/* Svg Id */
+#toiletSVGID1{
+    position: absolute;
+    width:100%;
+    top: 0%;
+    left: 0%;
+  }
+  /* Rect Id */
+  #toiletRectID1{
+    position: absolute;
+    width:90%;
+    height:31.9%;
+    transform: translate(5%, 9.5%);
+  }
+  #toilet2_Body1,
+  #toilet2_SCBody1,
+  #toilet2_MainBG{
+    position: absolute;
+    width:90%;
+    transform: translate(-17.5%, 0%);
+  }
+/*---------- Scene 7 School Toilet ---------- */
+
+
+
+
+
+
+
+
+
+/*---------- Scene 8 Online Class ---------- */
+/* Online Class- Background */
+
+.PhoneHolding_Background{
+    position: absolute;
+    opacity: 1;
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.PhoneScreen_Background{
+    position: absolute;
+    opacity: 1;
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+    /* Svg Id */
+    #PhoneSVGID1{
+        position: absolute;
+        width:88%;
+        top: 6%;
+        left: 17%;
+    }
+    /* Rect Id */
+    #PhoneRectID1{
+        position: absolute;
+        width:50%;
+        height:50%;
+        transform: translate(0%, 0%);
+    }
+    #PhoneNotification1,
+    #PhoneNotification2,
+    #PhoneNotification3{
+        width: 123%;
+        opacity: 0;
+    }
+  
+
+/* .polaroid Text Scene [1] */
+.polaroid1,
+.polaroid2,
+.polaroid3,
+.polaroid4,
+.polaroid5,
+.polaroid6,
+.polaroid7,
+.polaroid8,
+.polaroid9{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.polaroidText1{
+    /* font-size: 90px; */
+    color: rgb(247, 191, 39);
+    white-space: nowrap;
+    font-family: "CSPraJad-bold";
+    text-align: center;
+    line-height: 1.2;
+    font-size: 85px;
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.polaroidText2{
+    /* font-size: 90px; */
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    font-family: "CSPraJad-Italic";
+    text-align: center;
+    line-height: 1.4;
+    font-size: 30px; 
+    position: absolute;
+    width: 100%;
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.polaroidText3{
+    /* font-size: 90px; */
+    color: rgb(171, 39, 247);
+    white-space: nowrap;
+    font-family: "CSPraJad-bold";
+    text-align: center;
+    line-height: 1;
+    font-size: 50px;
+    position: absolute;
+    width: 100%;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Maincharacter Text */
+.Phone_MCText1{
+    width: 23%;
+    left: 22%;
+    top: 20%;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.Phone_MCText2{
+    width: 23%;
+    left: 75%;
+    top: 35%;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.Phone_MCText3{
+    width: 18%;
+    left: 22%;
+    top: 35%;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.Phone_MCText4{
+    width: 15%;
+    left: 77%;
+    top: 50%;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+/* Online Class */
+/*---------- Scene 8 Online Class ---------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------- Scene 10 [] ---------- */
+/* []-BackGround */
+.Ending_windowFrame{
+    position: absolute;
+    width: 102%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Ending_window{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* []-Image */
+.Ending_Body1{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* []-Secret character Image */
+.Ending_SCbody1{
+    position: absolute;
+    width: 18.5%;
+    top: 0%;
+    left: 51%;
+    filter: blur(2px);
+    transform: translate(-50%, -50%);
+}
+.symbol1{
+    position: absolute;
+    width: 15%;
+    top: 58%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.symbol2{
+    position: absolute;
+    width: 14%;
+    top: 35%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.EndingMc_Text1,
+.EndingMc_Text3,
+.EndingMc_Text4{
+    position: absolute;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.EndingMc_Text2{
+    position: absolute;
+    width: 8%;
+    top: 35%;
+    left: 63%;
+    filter: drop-shadow(5px 5px 4px #19191d);
+    transform: translate(-50%, -50%);
+}
+/*---------- Scene 10 [] ---------- */
+
+
+
+
+
+
+
