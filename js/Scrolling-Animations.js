@@ -36,8 +36,8 @@ function LeavesTransition() {
     var LeavesTransition = gsap.timeline({reverse: false});
     LeavesTransition.to(".illustration1-Leaves, .illustration1-BackGround", 20.0, {xPercent: 100, y:0, yoyo:true, ease: Power3.easeIn},"-=0.0");
     LeavesTransition.to(".illustration1-Leaves", 20, {rotation: -4, yoyo:true, ease: Power3.easeIn},"<");
-    LeavesTransition.to(".illustration1-1",{filter: "blur(5px)", duration: 20}, "<")
-    LeavesTransition.to(".illustration1-1, .schoolText4",{opacity: 0, duration: 20.0}, "<")
+    LeavesTransition.to(".illustration1-5",{filter: "blur(5px)", duration: 20}, "<")
+    LeavesTransition.to(".illustration1-5, .schoolText4",{opacity: 0, duration: 20.0}, "<")
     return LeavesTransition;
 }
 
@@ -95,33 +95,31 @@ function Transition1() {
         }
     });
     //Img2
-    Schoolscrolling1.to(".illustration1-1", 20, {rotationY: "+=180", transformOrigin:"up", transformStyle: "preserve-3d", ease: Power1.easeInOut});
-    Schoolscrolling1.to(".illustration1-1", {transformPerspective: 1900}, "<")
-    Schoolscrolling1.to(".illustration1-1", {filter: "blur(0px)"}, "<+7")
-    Schoolscrolling1.set(SchoolOpening1, {attr:{src:"/img/Scene1/school2.png"}},"<+3.5")
+    Schoolscrolling1.to(".illustration1-1, .illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", 20, {rotationY: "+=180", transformOrigin:"up", transformStyle: "preserve-3d", ease: Power1.easeInOut});
+    Schoolscrolling1.to(".illustration1-1, .illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", {transformPerspective: 1900}, "<")
+    Schoolscrolling1.to(".illustration1-1, .illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", {filter: "blur(0px)"}, "<+7")
+    Schoolscrolling1.set(".illustration1-1", {display: "none"}, "<+3.5")
     //Img3
-    Schoolscrolling1.set(".illustration1-1", {},"<-0.05");
+    Schoolscrolling1.set(".illustration1-2", {},"<-0.05");
 
-    Schoolscrolling1.to(".illustration1-1", 20, {rotationY: "+=180", transformOrigin:"up", transformStyle: "preserve-3d", ease: Power1.easeInOut});
-    Schoolscrolling1.to(".illustration1-1", {transformPerspective: 1900}, "<")
-    Schoolscrolling1.to(".illustration1-1", {filter: "blur(0px)"}, "<+7")
-    Schoolscrolling1.set(SchoolOpening1, {attr:{src:"/img/Scene1/school3.png"}},"<+3.5")
-    
+    Schoolscrolling1.to(".illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", 20, {rotationY: "+=180", transformOrigin:"up", transformStyle: "preserve-3d", ease: Power1.easeInOut});
+    Schoolscrolling1.to(".illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", {transformPerspective: 1900}, "<")
+    Schoolscrolling1.to(".illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", {filter: "blur(0px)"}, "<+7")
+    Schoolscrolling1.set(".illustration1-2", {display: "none"}, "<+3.5")
     //Img4
-    Schoolscrolling1.set(".illustration1-1", {},"<-0.05");
+    Schoolscrolling1.set(".illustration1-2", {},"<-0.05");
     
-    Schoolscrolling1.to(".illustration1-1", 20, {rotationY: "+=180", transformOrigin:"up", transformStyle: "preserve-3d", ease: Power1.easeInOut});
-    Schoolscrolling1.to(".illustration1-1", {transformPerspective: 1900}, "<")
-    Schoolscrolling1.to(".illustration1-1", {filter: "blur(0px)"}, "<+7")
-    Schoolscrolling1.set(SchoolOpening1, {attr:{src:"/img/Scene1/school4.png"}},"<+3.5")
-    
+    Schoolscrolling1.to(".illustration1-3, .illustration1-4, .illustration1-5", 20, {rotationY: "+=180", transformOrigin:"up", transformStyle: "preserve-3d", ease: Power1.easeInOut});
+    Schoolscrolling1.to(".illustration1-3, .illustration1-4, .illustration1-5", {transformPerspective: 1900}, "<")
+    Schoolscrolling1.to(".illustration1-3, .illustration1-4, .illustration1-5", {filter: "blur(0px)"}, "<+7")
+    Schoolscrolling1.set(".illustration1-3", {display: "none"}, "<+3.5")
     //Img5
-    Schoolscrolling1.set(".illustration1-1", {},"<-0.05");
-    
-    Schoolscrolling1.to(".illustration1-1", 20, {rotationY: "+=180", transformOrigin:"up", transformStyle: "preserve-3d", ease: Power1.easeInOut});
-    Schoolscrolling1.to(".illustration1-1", {transformPerspective: 1900}, "<")
-    Schoolscrolling1.to(".illustration1-1", {filter: "blur(0px)"}, "<+7")
-    Schoolscrolling1.set(SchoolOpening1, {attr:{src:"/img/Scene1/school5.png"}},"<+3.5")
+    Schoolscrolling1.set(".illustration1-2", {},"<-0.05");
+
+    Schoolscrolling1.to(".illustration1-4, .illustration1-5", 20, {rotationY: "+=180", transformOrigin:"up", transformStyle: "preserve-3d", ease: Power1.easeInOut});
+    Schoolscrolling1.to(".illustration1-4, .illustration1-5", {transformPerspective: 1900}, "<")
+    Schoolscrolling1.to(".illustration1-4, .illustration1-5", {filter: "blur(0px)"}, "<+7")
+    Schoolscrolling1.set(".illustration1-4", {display: "none"}, "<+3.5")
     
 
     Schoolscrolling1.to(".LeavesParticle0", 35,{left:"150%", ease: Power1.easeIn},"<-15");
