@@ -25,6 +25,33 @@
 // ----------------------------------//
 
 
+// ----------------------------------//
+//                                   //
+//    Introduce Scene Animation      //
+//                                   //
+// ----------------------------------//
+
+let IntrolScrolling = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".Storyboard---Introl",
+        start: "top% center",
+        end: "bottom center",
+        toggleActions: "play complete pause reverse",
+        pin: true,
+        // scrub: 1.5,
+        markers: {
+            startColor: "black",
+            endColor: "black"},
+
+    }
+});
+// IntrolScrolling.from(".YSLC_LOGO1",3,{opacity: 0},"1");
+IntrolScrolling.to(".YSLC_LOGO1",1,{top: "6%",left:"95%", width:"7%"},">");
+
+// IntrolScrolling.add(IntrolAnimated, 0, ">");
+//Img2
+
+
 
 
 // ----------------------------------//
@@ -46,10 +73,20 @@ function LeavesTransition() {
 //       school view Transition      // 
 //                                   //
 // ----------------------------------//
-function Transition1() {
-    // var Transition1 = gsap.timeline({scrollTrigger:{reverse: false, toggleActions: "restart none pause none",}});
-    var Transition1 = gsap.timeline({scrollTrigger:{reverse: true,autoKill: false,}});
-    Transition1.to(window, 3, {scrollTo:{y:".Storyboard---2", offsetY: -100}}, "0.0");
+
+
+
+
+
+  function Transition1() {
+    var Transition1 = gsap.timeline({
+        scrollTrigger:{
+            // reverse: true,
+            // autoKill: false,
+        }
+    });
+    // Transition1.set("body", {className: '-=StopScrollingTest'});
+    Transition1.to(window, 1.2, {scrollTo:{y:".Storyboard---2", offsetY: -100}}, "0.0");
     return Transition1;
 }
 
@@ -71,8 +108,7 @@ function Transition1() {
                 endColor: "blue"},
         }
     });
-
-    Schoolscrolling1PIN.call(Transition1, 0, "<-1");
+    Schoolscrolling1PIN.pause(Transition1, 0, "<-1");
 
     
 // ----------------------------------//
@@ -179,6 +215,11 @@ function Transition1() {
 
 
 
+
+
+
+
+
 // ----------------------------------//
 //                                   //
 //  Maincharacter Background [PIN}]  // Scene 2 & 3 Background**
@@ -186,7 +227,7 @@ function Transition1() {
 // ----------------------------------//
     function Transition2() {
         var Transition2 = gsap.timeline({scrollTrigger:{reverse: false}});
-        Transition2.to(window, 3, {scrollTo:{y:".Storyboard---3", offsetY: -100, ease: Power4.easeOut}}, "0.0");
+        Transition2.to(window, 1.2, {scrollTo:{y:".Storyboard---3", offsetY: -100, ease: Power4.easeOut}}, "0.0");
         return Transition2;
     }
 
@@ -201,7 +242,7 @@ function Transition1() {
                 endColor: "blue"},
         }
     });
-    MainCharacterPresent1PIN.call(Transition2, 0, "<-1");
+    MainCharacterPresent1PIN.pause(Transition2, 0, "<-1");
 
 
 // ----------------------------------//
@@ -212,7 +253,7 @@ function Transition1() {
     let MainCharacterPresentScrollingBackGround = gsap.timeline({
         scrollTrigger: {
             trigger: ".Storyboard---2",
-            start: "center center",
+            start: "30% center",
             end: "+=3000 center",
             toggleActions: "restart complete reverse pause",
             scrub: 2.5,
@@ -239,6 +280,43 @@ function Transition1() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
 // ----------------------------------//
 //                                   //
 //      Main Character LongScene     // Scene 2
@@ -258,6 +336,7 @@ function Transition1() {
         }
     });
     // MainCharacterPresentScrolling1.to(".illustration2-MC1Background",{y: innerHeight * -3.25, yoyo:true})
+    MainCharacterPresentScrolling1.to("body", 3,{backgroundColor:"#000000", ease:Power3.easeOut},"<");
     MainCharacterPresentScrolling1.from(".illustration2-MC1",{duration: 0.8})
     // MainCharacterPresentScrolling1.from(".illustration2-MC1",{top:"-200%" ,duration: 0.5, ease: Circ.easeOut, yoyo:true},"-=3.0");
     MainCharacterPresentScrolling1.from(".illustration2-MC1",{scale:0, transformOrigin:"50% center",duration: 0.2, opacity: 0,ease: Circ.easeOut, yoyo:true},"-=3.0");
@@ -321,6 +400,38 @@ function Transition1() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // ----------------------------------//
     //                                   //
     //       Classroom Present           // Scene 2
@@ -341,7 +452,7 @@ function Transition1() {
     //Classroom Present [In]
     MainCharacterPresentScrolling2.from(".illustration4-ClassroomPresent2",{top: "140%", ease: Power1.easeOut, duration: 10, yoyo:true}, ">+8")
     MainCharacterPresentScrolling2.from(".illustration4-ClassroomPresent3",{top: "140%", ease: Power1.easeOut, duration: 10, yoyo:true}, ">")
-    MainCharacterPresentScrolling2.from(".illustration4-ClassroomPresent1, .ClassroomPresent1_Paper",{y: innerHeight * 3.5, ease: Power1.easeOut, duration: 10, yoyo:true}, ">")
+    MainCharacterPresentScrolling2.from(".illustration4-ClassroomPresent1, .ClassroomPresent1_Paper",{top:"140%", ease: Power1.easeOut, duration: 10, yoyo:true}, ">")
     
     //CLassroom Band [Out]
     MainCharacterPresentScrolling2.to(".ClassroomBand1, .MC2Text4, .MC2Text5",15,{opacity:0, ease: Circ.easeOut}, "<-5")
@@ -366,13 +477,13 @@ function Transition1() {
     MainCharacterPresentScrolling2.to(".illustration4-ClassroomPresent2",{y: "-50%", ease: Circ.easeIn, duration: 10},"<")
     MainCharacterPresentScrolling2.to(".illustration4-ClassroomPresent1",{y: "-50%", ease: Circ.easeIn, duration: 10},"<")
     MainCharacterPresentScrolling2.to(".illustration4-ClassroomPresent3",{y: "-50%", ease: Circ.easeIn, duration: 10},"<")
-    MainCharacterPresentScrolling2.to("body", 3,{backgroundColor:"#ffffff", ease:Power3.easeOut},"<");
+    MainCharacterPresentScrolling2.to("body", 10,{backgroundColor:"#ffffff", ease:Power3.easeOut},"<");
 
 
 
     function Transition3() {
         var Transition3 = gsap.timeline({scrollTrigger:{reverse: true}});
-        Transition3.to(window, 3, {scrollTo:{y:".Storyboard---4", offsetY: -300, ease: Power4.easeIn}}, "0.0");
+        Transition3.to(window, 1.2, {scrollTo:{y:".Storyboard---4", offsetY: -300, ease: Power4.easeIn}}, "0.0");
         return Transition3;
     }
 
@@ -387,7 +498,7 @@ function Transition1() {
                 endColor: "blue"},
         }
     });
-    MainCharacterPresent2Transition.call(Transition3, 0, "<-1");
+    MainCharacterPresent2Transition.pause(Transition3, 0, "<-1");
 
     let MainCharacterPresentScrollingPIN = gsap.timeline({
     scrollTrigger: {
@@ -424,6 +535,43 @@ function Transition1() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ----------------------------------//
 //                                   //
 //          School Balcony           // Scene 3
@@ -432,8 +580,8 @@ function Transition1() {
 
 // PIN
 function Transition4() {
-    var Transition4 = gsap.timeline({scrollTrigger:{reverse: true}});
-    Transition4.to(window, 3, {scrollTo:{y:".Storyboard---5", offsetY: -150, ease: Power4.easeOut}}, "0.0");
+    var Transition4 = gsap.timeline({scrollTrigger:{}});
+    Transition4.to(window, 1.2, {scrollTo:{y:".Storyboard---5", offsetY: -150, ease: Power4.easeOut}}, "0.0");
     return Transition4;
 }
 
@@ -448,7 +596,7 @@ let BalconyScrollingTransition1 = gsap.timeline({
             endColor: "yellow"},
     }
 });
-BalconyScrollingTransition1.call(Transition4, 0, "<-1");
+BalconyScrollingTransition1.pause(Transition4, 0, "<-1");
 
 let BalconyScrollingPIN = gsap.timeline({
     scrollTrigger: {
@@ -570,6 +718,43 @@ BalconyScrolling1.to(".balcony-Background", {left: "-23%",duration: 20, ease: Po
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ----------------------------------//
 //                                   //
 //          School Lockers           // Scene 5
@@ -577,7 +762,7 @@ BalconyScrolling1.to(".balcony-Background", {left: "-23%",duration: 20, ease: Po
 // ----------------------------------//
 function Transition5() {
     var Transition5 = gsap.timeline({scrollTrigger:{reverse: true}});
-    Transition5.to(window, 3, {scrollTo:{y:".Storyboard---6", offsetY: -100, ease: Power4.easeOut}}, "0.0");
+    Transition5.to(window, 1.2, {scrollTo:{y:".Storyboard---6", offsetY: -100, ease: Power4.easeOut}}, "0.0");
     return Transition5;
 }
 
@@ -592,7 +777,7 @@ let LockerTransition1 = gsap.timeline({
             endColor: "yellow"},
     }
 });
-LockerTransition1.call(Transition5, 0, "<-1");
+LockerTransition1.pause(Transition5, 0, "<-1");
 
 
 let LockerScrolling1 = gsap.timeline({
@@ -639,7 +824,7 @@ LockerScrolling1.set(".LockerBackground1, .LockerBackground2, .Hand2_LockerScene
 // Main character Reaction Animated
 LockerScrolling1.to(".LockerBackground3, .LockerPeople1" ,{filter: "blur(16px)", duration: 0.85 , delay: 1},">-0.5")
 LockerScrolling1.to(".MC_ReactionBody, .MC_ReactionBase", {opacity: 1, duration: 0.45, width:" 87%"}, '>-0.5')
-LockerScrolling1.to(".MC_ReactionText", {opacity: 1, duration: 0.55, width:" 87%"}, '>-0.3')
+LockerScrolling1.to(".MC_ReactionText", {opacity: 1, duration: 1, width:" 87%"}, '>-0.3')
 
 // -------[ Change Background ]-------//
 LockerScrolling1.set(".LockerBackground4", {display: "unset"}, "<")
@@ -659,6 +844,7 @@ LockerScrolling1.to(".LockerBackground4, .LockerPeople1" ,{filter: "blur(0px)", 
 LockerScrolling1.from(".LockerMCText5" ,{opacity: 0, duration: 1.23,},">+0.5")
 LockerScrolling1.from(".LockerMCText6" ,{opacity: 0, duration: 1.23,},">-0.3")
 //Ending Waited
+LockerScrolling1.to("body", 3,{backgroundColor:"#000000", ease:Power3.easeOut},"<");
 LockerScrolling1.set(".Storyboard---5",{delay:5},">")
 
 
@@ -685,46 +871,48 @@ LockerScrolling1.set(".Storyboard---5",{delay:5},">")
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ----------------------------------//
 //                                   //
 //          Lunch Break              // Scene 6
 //                                   //
 // ----------------------------------//
-
-function Transition6() {
-    var Transition6 = gsap.timeline({scrollTrigger:{reverse: true}});
-    Transition6.to(window, 0.0, {scrollTo:{y:".Storyboard---7", offsetY: -100, ease: Power4.easeOut}}, "");
-    return Transition6;
-}
-
-let LunchBreak1Transition = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".Storyboard---6",
-        start: "+=3300px center",
-        end: "+=3400px center",
-        toggleActions: "restart play reverse reset",
-        markers: {
-            startColor: "green",
-            endColor: "green"},
-    }
-});
-// Transition6.set("#LunchCrop" ,{filter: "blur(0px)"})
-//Focus
-LunchBreak1Transition.to("#LunchCrop", 1,{filter: "blur(5px)"}, "<")
-LunchBreak1Transition.to('#LunchtransitionCrop',0.7,{scaleY:0.9, transformOrigin:"50% 50%", ease: Back.easeOut},">-0.9");
-LunchBreak1Transition.to('#LunchtransitionCrop',0.7,{scaleX:0.9, transformOrigin:"50% 50%", ease: Back.easeOut},"<");
-LunchBreak1Transition.to('#LunchCrop',0.5, {y: "-5.5%", ease: Back.easeOut}, '<')
-LunchBreak1Transition.to(".canteen_cameraUI",1, { width: "71%"},'<')
-LunchBreak1Transition.to("#LunchCrop", 0.4,{filter: "blur(0px)",ease: Back.easeOut}, ">")
-
-LunchBreak1Transition.to("#LunchCrop", 0.3,{filter: "contrast(200%)",filter: "brightness(2)",ease: Power1.easeInOut}, "<")
-//Flash
-LunchBreak1Transition.to(".canteen_cameraFlash",0.18,{opacity: 1}, "<+0.21")
-//Transition
-LunchBreak1Transition.call(Transition6, 0, ">+1");
-LunchBreak1Transition.call(ToiletIntrol, 0, ">");
-
-
 // PIN
 let LunchBreakPIN = gsap.timeline({
     scrollTrigger: {
@@ -753,7 +941,8 @@ let LunchBreak1 = gsap.timeline({
     }
 });
 // Settings Before start
-LunchBreak1.set(".canteen_cameraFlash",{ width: "100%"})
+LunchBreak1.set(".canteen_Background",{ width: "35%"},"0.0")
+LunchBreak1.set(".canteen_cameraFlash",{ width: "120%"},"0.0")
 LunchBreak1.set('.canteen_cameraUI',{width: "75%",  top: "48%", left:"46%", opacity:0},"")
 LunchBreak1.set('#LunchTransitionCrop', {autoAlpha:1},"<")
 LunchBreak1.set('#LunchtransitionCrop',{yPercent:-100, scale:0.8, transformOrigin:"50% 0%", ease: Power1.easeOut}, '<')
@@ -799,9 +988,20 @@ LunchBreak1.to(".canteen_MCText3, .canteen_MCText4" ,{opacity: 0, duration: 15,}
 LunchBreak1.from(".canteen_cameraUI",20, {opacity: 0},'<')
 LunchBreak1.to('#LunchTransitionCrop',20,{left: "60%"},"<");
 
-LunchBreak1.set('#LunchTransitionCrop',{delay:20},">");
-//Camera flash
+// LunchBreak1.set('#LunchTransitionCrop',{delay:20},">");
 
+
+//Camera flash
+LunchBreak1.to("#LunchCrop", 7,{filter: "blur(5px)"}, ">")
+LunchBreak1.to('#LunchtransitionCrop',4.9,{scaleY:0.9, transformOrigin:"50% 50%", ease: Back.easeOut},">-3.6");
+LunchBreak1.to('#LunchtransitionCrop',4.9,{scaleX:0.9, transformOrigin:"50% 50%", ease: Back.easeOut},"<");
+LunchBreak1.to('#LunchCrop',3.5, {y: "-5.5%", ease: Back.easeOut}, '<')
+LunchBreak1.to(".canteen_cameraUI",1, { width: "71%"},'<')
+LunchBreak1.to("#LunchCrop", 3.6,{filter: "blur(0px)",ease: Back.easeOut}, ">")
+
+LunchBreak1.to("#LunchCrop", 2.1,{filter: "contrast(200%)",filter: "brightness(2)",ease: Power1.easeInOut}, "<")
+//Flash
+LunchBreak1.to(".canteen_cameraFlash",1.56,{opacity: 1}, "<+1.41")
 
 
 
@@ -837,7 +1037,7 @@ LunchBreak1.set('#LunchTransitionCrop',{delay:20},">");
 
 function Transition7() {
     var Transition7 = gsap.timeline({scrollTrigger:{reverse: true}});
-    Transition7.to(window, 3, {scrollTo:{y:".Storyboard---8", offsetY: -100, ease: Power4.easeOut}}, "0.0");
+    Transition7.to(window, 1.2, {scrollTo:{y:".Storyboard---8", offsetY: -100, ease: Power4.easeOut}}, "0.0");
     return Transition7;
 }
 
@@ -852,7 +1052,7 @@ let ToiletOutrol = gsap.timeline({
             endColor: "yellow"},
     }
 });
-ToiletOutrol.call(Transition7, 0, "<-1");
+ToiletOutrol.pause(Transition7, 0, "<-1");
 
 function ToiletIntrol() {
     var ToiletIntrol = gsap.timeline({scrollTrigger:{reverse: true}});
@@ -882,11 +1082,17 @@ let ToiletTransition1 = gsap.timeline({
     }
 });
 //Settings Before start
-// ToiletTransition1.set(".Storyboard---7",{opacity: 1}, "0.0")
+ToiletTransition1.set(".Storyboard---7",{opacity: 1}, "0.0")
 ToiletTransition1.set(".toilet_BGOut1, .toilet_BGIn1",{width: "300%", top: "20%", left: "5%"}, "0.0")
 ToiletTransition1.set("#toilet2_SCBody1",{transform: 'translateX(60%) translateY(5%)'},"0.0")
+
+ToiletTransition1.set(".toilet_washing1",{filter: "contrast(500%)",filter: "brightness(2)"}, ">")
+ToiletTransition1.set(".toilet_BGOut1",{filter: "contrast(450%)",filter: "brightness(2)"}, ">")
+ToiletTransition1.to(".toilet_washing1", 0.6,{filter: "contrast(100%)",filter: "brightness(1)",ease: Power1.easeInOut}, ">")
+ToiletTransition1.to(".toilet_BGOut1", 0.3,{filter: "contrast(100%)",filter: "brightness(1)",ease: Power1.easeInOut}, "<")
+ToiletTransition1.to(".toilet_cameraFlash",0.5,{opacity: 0}, "<")
 //Main Scene Mirror Reflections
-ToiletTransition1.to(".toilet_BGOut1, .toilet_BGIn1",{top: "120%", duration: 5, ease: Power1.easeOut}, "<")
+ToiletTransition1.to(".toilet_BGOut1, .toilet_BGIn1",{top: "120%", duration: 5, ease: Power1.easeOut}, ">")
 ToiletTransition1.to(".toilet_washing1",2,{opacity: 0, delay: 1}, "<")
 //Zoom out
 ToiletTransition1.to(".toilet_BGOut1, .toilet_BGIn1",{left: "50%", duration: 3},"5")
