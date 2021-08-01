@@ -1092,12 +1092,18 @@ ToiletTransition1.to(".toilet_washing1", 0.6,{filter: "contrast(100%)",filter: "
 ToiletTransition1.to(".toilet_BGOut1", 0.3,{filter: "contrast(100%)",filter: "brightness(1)",ease: Power1.easeInOut}, "<")
 ToiletTransition1.to(".toilet_cameraFlash",0.5,{opacity: 0}, "<")
 //Main Scene Mirror Reflections
-ToiletTransition1.to(".toilet_BGOut1, .toilet_BGIn1",{top: "120%", duration: 5, ease: Power1.easeOut}, ">")
-ToiletTransition1.to(".toilet_washing1",2,{opacity: 0, delay: 1}, "<")
+ToiletTransition1.to(".toilet_BGOut1, .toilet_BGIn1",15,{top: "120%", ease: Power1.easeOut}, ">")
+//Main character Text
+
+ToiletTransition1.from(".toiletText1",2,{opacity: 0, width:"20%"}, "<+1")
+ToiletTransition1.to(".toilet_washing1",10,{opacity: 0, delay: 1}, "<+4")
+ToiletTransition1.from(".toiletText2",2,{opacity: 0, width:"15%"}, "<+1")
+
 //Zoom out
-ToiletTransition1.to(".toilet_BGOut1, .toilet_BGIn1",{left: "50%", duration: 3},"5")
+ToiletTransition1.to(".toilet_BGOut1, .toilet_BGIn1",{left: "50%", duration: 3},">+7")
 ToiletTransition1.to(".toilet_BGOut1, .toilet_BGIn1",{top: "50%", duration: 4},"<")
 ToiletTransition1.to(".toilet_BGOut1, .toilet_BGIn1",{width: "85%", duration: 4},"<")
+ToiletTransition1.to(".toiletText1, .toiletText2",2,{opacity: 0}, "<")
 //Main Scene  In [2]
 // ToiletTransition1.to(".toilet_BGOut1",3,{filter: "blur(5px)"},">")
 ToiletTransition1.from("#toiletSVGID1",3,{opacity: 0},">+1")
@@ -1105,17 +1111,12 @@ ToiletTransition1.from("#toiletSVGID1",3,{opacity: 0},">+1")
 //Main Scene Secret Character In [2] //Character Animated
 ToiletTransition1.to("#toilet2_SCBody1",20,{transform: 'translateX(20%) translateY(10%)', width:"280"},">+1")
 ToiletTransition1.fromTo("#toilet2_SCBody1",{yPercent: 0, yoyo: true}, {yPercent: -0.56, duration: 0.9, yoyo: true, repeat: 10, repeatDelay: 0.3}, "<")
+ToiletTransition1.from(".toiletText3",5,{opacity: 0, width:"20%"}, "<")
 
 
-ToiletTransition1.to("#toiletSVGID1",3,{opacity:0},">+5")
+ToiletTransition1.to("#toiletSVGID1,.toilet_BGOut1, .toilet_BGIn1, .toiletText3",3,{opacity:0},">+9")
 
-
-// ToiletTransition1.fromTo("#SvgId", {autoAlpha:1}, {autoAlpha:1}, '>');
-// ToiletTransition1.to('#pathId2', {xPercent: 186, duration: 2, ease: Power2.easeOut}, '<+.1')
-
-
-
-ToiletTransition1.to("body", 3,{backgroundColor:"#262524",ease:Power3.easeOut},">");
+ToiletTransition1.to("body", 5,{backgroundColor:"#262524",ease:Power3.easeOut},"<");
 ToiletTransition1.set(".toilet_washing1",{delay: 3}, ">")
 
 
@@ -1267,7 +1268,7 @@ let EndingOfStory = gsap.timeline({
     EndingOfStory.to(".EndingMc_Text1",{duration: 1, opacity: 0}, "<")
 
     //Zoom Out
-    EndingOfStory.to(".Ending_window",15,{width:"80%", top:"50%", scale: 1}, ">+1")
+    EndingOfStory.to(".Ending_window",15,{width:"80%", top:"50%", scale: 1}, "<-1")
     EndingOfStory.to(".Ending_Body1",15,{width: "80%", top:"50%"}, "<")
 
     EndingOfStory.from(".symbol1", 6,{opacity: 0, ease: Power1.easeIn},"<+2");
