@@ -1035,35 +1035,35 @@ LunchBreak1.to(".canteen_cameraFlash",1.56,{opacity: 1}, "<+1.41")
 //                                   //
 // ----------------------------------//
 
-function Transition7() {
-    var Transition7 = gsap.timeline({scrollTrigger:{reverse: true}});
-    Transition7.to(window, 1.2, {scrollTo:{y:".Storyboard---8", offsetY: -100, ease: Power4.easeOut}}, "0.0");
-    return Transition7;
-}
+// function Transition7() {
+//     var Transition7 = gsap.timeline({scrollTrigger:{reverse: true}});
+//     Transition7.to(window, 1.2, {scrollTo:{y:".Storyboard---8", offsetY: -100, ease: Power4.easeOut}}, "0.0");
+//     return Transition7;
+// }
 
-let ToiletOutrol = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".Storyboard---7",
-        start: "+=4200px center",
-        end: "+=4200px center",
-        toggleActions: "restart play reverse reset",
-        markers: {
-            startColor: "yellow",
-            endColor: "yellow"},
-    }
-});
-ToiletOutrol.pause(Transition7, 0, "<-1");
+// let ToiletOutrol = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: ".Storyboard---7",
+//         start: "+=4200px center",
+//         end: "+=4200px center",
+//         toggleActions: "restart play reverse reset",
+//         markers: {
+//             startColor: "yellow",
+//             endColor: "yellow"},
+//     }
+// });
+// ToiletOutrol.pause(Transition7, 0, "<-1");
 
-function ToiletIntrol() {
-    var ToiletIntrol = gsap.timeline({scrollTrigger:{reverse: true}});
-    // ToiletTransition1.set(".Storyboard---7",{opacity: 1}, "0.0")
-    ToiletIntrol.set(".toilet_washing1",{filter: "contrast(500%)",filter: "brightness(2)"}, ">")
-    ToiletIntrol.set(".toilet_BGOut1",{filter: "contrast(450%)",filter: "brightness(2)"}, ">")
-    ToiletIntrol.to(".toilet_washing1", 0.6,{filter: "contrast(100%)",filter: "brightness(1)",ease: Power1.easeInOut}, ">")
-    ToiletIntrol.to(".toilet_BGOut1", 0.3,{filter: "contrast(100%)",filter: "brightness(1)",ease: Power1.easeInOut}, "<")
-    ToiletIntrol.to(".toilet_cameraFlash",0.5,{opacity: 0}, "<")
-    return ToiletIntrol;
-}
+// function ToiletIntrol() {
+//     var ToiletIntrol = gsap.timeline({scrollTrigger:{reverse: true}});
+//     // ToiletTransition1.set(".Storyboard---7",{opacity: 1}, "0.0")
+//     ToiletIntrol.set(".toilet_washing1",{filter: "contrast(500%)",filter: "brightness(2)"}, ">")
+//     ToiletIntrol.set(".toilet_BGOut1",{filter: "contrast(450%)",filter: "brightness(2)"}, ">")
+//     ToiletIntrol.to(".toilet_washing1", 0.6,{filter: "contrast(100%)",filter: "brightness(1)",ease: Power1.easeInOut}, ">")
+//     ToiletIntrol.to(".toilet_BGOut1", 0.3,{filter: "contrast(100%)",filter: "brightness(1)",ease: Power1.easeInOut}, "<")
+//     ToiletIntrol.to(".toilet_cameraFlash",0.5,{opacity: 0}, "<")
+//     return ToiletIntrol;
+// }
 
 
 
