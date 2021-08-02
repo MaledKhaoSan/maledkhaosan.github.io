@@ -78,37 +78,9 @@ function LeavesTransition() {
 
 
 
-  function Transition1() {
-    var Transition1 = gsap.timeline({
-        scrollTrigger:{
-            // reverse: true,
-            // autoKill: false,
-        }
-    });
-    // Transition1.set("body", {className: '-=StopScrollingTest'});
-    Transition1.to(window, 1.2, {scrollTo:{y:".Storyboard---2", offsetY: -100}}, "0.0");
-    return Transition1;
-}
 
 
 
-// ----------------------------------//
-//                                   //
-//         school view [PIN]         // Scene 1
-//                                   //
-// ----------------------------------//
-    let Schoolscrolling1PIN = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".Storyboard---1",
-            start: "+=4000 center",
-            end: "+=4000 center",
-            toggleActions: "restart complete reverse reset",
-            markers: {
-                startColor: "blue",
-                endColor: "blue"},
-        }
-    });
-    Schoolscrolling1PIN.pause(Transition1, 0, "<-1");
 
     
 // ----------------------------------//
@@ -1147,7 +1119,7 @@ let OnlineClass1 = gsap.timeline({
     scrollTrigger: {
         trigger: ".Storyboard---8",
         start: "center center",
-        end: "+=8000px",
+        end: "+=8000px center",
         // end: "bottom center",
         toggleActions: "restart complete none reverse",
         pin: true,
@@ -1218,7 +1190,23 @@ OnlineClass1.set("#PhoneNotification1, #PhoneNotification2, #PhoneNotification3"
 OnlineClass1.to(".PhoneHolding_Background, .PhoneScreen_Background",{delay: 1, duration: 0.6, left: "120%", top: "60%"},">-0.94")
 OnlineClass1.to(".Phone_MCText3, .Phone_MCText4", 0.4,{opacity: 0, ease: Power1.easeIn},"<");
 OnlineClass1.to(".PhoneHolding_Background, .PhoneScreen_Background",{duration: 0.9, rotation: 24,}, "<-0.1")
-OnlineClass1.to(".Storyboard---8",{delay: 1})
+
+
+OnlineClass1.from(".customer1, .customer2",0.5,{opacity:0},">+1")
+OnlineClass1.to(".customer1",5,{top:"75%",left:"-50%",width: "200%", ease: Power1.easeIn},"<")
+OnlineClass1.to(".customer2",5,{top:"75%",left:"150%",width: "200%", ease: Power1.easeIn},"<")
+
+
+OnlineClass1.from(".customer3",1,{opacity:0},"<+1.8")
+OnlineClass1.to(".customer3",9,{top:"90%",left:"-100%",width: "200%", ease: Power1.easeIn},"<")
+
+
+OnlineClass1.to(".customer4",7,{top:"70%",left:"-60%",width: "90%", ease: Power1.easeIn},"<")
+OnlineClass1.to(".customer5",7,{top:"77%",left:"150%",width: "130%", ease: Power1.easeIn},"<")
+OnlineClass1.from(".customer4, .customer5",1,{opacity:0},"<+1.8")
+
+
+OnlineClass1.to(".Storyboard---8",{delay: 5})
 
 
 

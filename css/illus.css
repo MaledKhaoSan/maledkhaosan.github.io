@@ -1086,6 +1086,43 @@ svg{
     transform: translate(-50%, -50%);
 }
 
+
+.customer1{
+    position: absolute;
+    width: 80%;
+    top: 60%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+}
+.customer2{
+    position: absolute;
+    width: 80%;
+    top: 60%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+}
+.customer3{
+    position: absolute;
+    width: 76%;
+    top: 70%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+}
+
+.customer4{
+    position: absolute;
+    width: 65%;
+    top: 70%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+}
+.customer5{
+    position: absolute;
+    width: 65%;
+    top: 70%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+}
 /* Online Class */
 /*---------- Scene 8 Online Class ---------- */
 
