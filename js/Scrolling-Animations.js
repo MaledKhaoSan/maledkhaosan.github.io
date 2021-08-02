@@ -1194,16 +1194,25 @@ OnlineClass1.to(".PhoneHolding_Background, .PhoneScreen_Background",{duration: 0
 
 OnlineClass1.from(".customer1, .customer2",0.5,{opacity:0},">+1")
 OnlineClass1.to(".customer1",5,{top:"75%",left:"-50%",width: "200%", ease: Power1.easeIn},"<")
-OnlineClass1.to(".customer2",5,{top:"75%",left:"150%",width: "200%", ease: Power1.easeIn},"<")
+OnlineClass1.to(".customer2",6,{top:"75%",left:"150%",width: "200%", ease: Power1.easeIn},"<")
 
 
 OnlineClass1.from(".customer3",1,{opacity:0},"<+1.8")
-OnlineClass1.to(".customer3",9,{top:"90%",left:"-100%",width: "200%", ease: Power1.easeIn},"<")
+OnlineClass1.to(".customer3",9,{top:"170%",left:"-100%",width: "340%", ease: Power1.easeIn},"<")
 
 
-OnlineClass1.to(".customer4",7,{top:"70%",left:"-60%",width: "90%", ease: Power1.easeIn},"<")
-OnlineClass1.to(".customer5",7,{top:"77%",left:"150%",width: "130%", ease: Power1.easeIn},"<")
+OnlineClass1.to(".customer4",7,{top:"107%",left:"-60%",width: "94%", ease: Power1.easeIn},"<")
+OnlineClass1.to(".customer5",7,{top:"97%",left:"150%",width: "130%", ease: Power1.easeIn},"<")
 OnlineClass1.from(".customer4, .customer5",1,{opacity:0},"<+1.8")
+
+
+OnlineClass1.to(".customer6",7,{top:"170%", ease: Power1.easeIn},"<+1")
+OnlineClass1.to(".customer6",7,{width: "356%", ease: Power1.easeIn},"<")
+OnlineClass1.to(".customer6",7,{left:"-52%", ease: Power1.easeIn},"<")
+OnlineClass1.from(".customer6",1.3,{opacity:0, ease: Power1.easeIn},"<+1.5")
+
+OnlineClass1.from(".customer7",1.1,{opacity:0},"<")
+OnlineClass1.to(".customer7",6,{top:"179%",left:"150%",width: "350%", ease: Power1.easeIn},"<")
 
 
 OnlineClass1.to(".Storyboard---8",{delay: 5})

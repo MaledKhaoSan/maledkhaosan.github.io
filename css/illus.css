@@ -1104,7 +1104,7 @@ svg{
 .customer3{
     position: absolute;
     width: 76%;
-    top: 70%;
+    top: 64%;
     left: 39%;
     transform: translate(-50%, -50%);
 }
@@ -1112,14 +1112,28 @@ svg{
 .customer4{
     position: absolute;
     width: 65%;
-    top: 70%;
-    left: 28%;
+    top: 65%;
+    left: 23%;
     transform: translate(-50%, -50%);
 }
 .customer5{
     position: absolute;
     width: 65%;
-    top: 70%;
+    top: 65%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+}
+.customer6{
+    position: absolute;
+    width: 80%;
+    top: 64%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+}
+.customer7{
+    position: absolute;
+    width: 80%;
+    top: 72%;
     left: 69%;
     transform: translate(-50%, -50%);
 }
