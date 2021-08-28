@@ -1023,6 +1023,16 @@ ToiletTransition1.set(".toilet_washing1",{delay: 3}, ">")
 //       Online CLass Scene          // Scene 8
 //                                   //
 // ----------------------------------//
+let OnlineClassPin = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".Storyboard---8",
+        start: "center center",
+        end: "+=9450px center",
+        pin: true,
+        scrub: 0.8,
+    }
+});
+
 let OnlineClass1 = gsap.timeline({
     scrollTrigger: {
         trigger: ".Storyboard---8",
@@ -1030,7 +1040,6 @@ let OnlineClass1 = gsap.timeline({
         end: "+=9400px center",
         // end: "bottom center",
         toggleActions: "restart complete none reverse",
-        pin: true,
         scrub: 0.8,
     //     markers: {
     //         startColor: "red",
