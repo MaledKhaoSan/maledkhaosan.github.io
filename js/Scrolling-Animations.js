@@ -36,7 +36,8 @@ let IntrolScrolling = gsap.timeline({
         trigger: ".Storyboard---Introl",
         start: "top% center",
         end: "bottom center",
-        toggleActions: "play complete pause reverse",
+        // toggleActions: "play complete pause reverse",
+        toggleActions: "play none none none",
         pin: true,
         // scrub: 1.5,
         markers: {
@@ -45,11 +46,18 @@ let IntrolScrolling = gsap.timeline({
 
     }
 });
-// IntrolScrolling.from(".YSLC_LOGO1",3,{opacity: 0},"1");
-IntrolScrolling.to(".YSLC_LOGO1",1,{top: "6%",left:"95%", width:"7%"},">");
+IntrolScrolling.to(".YSLC_LOGO1", 1.5, {autoAlpha:1, repeat:1, repeatDelay:0.8,yoyo:true, ease: Linear.easeNone}, "<");
 
+IntrolScrolling.to(".Web_AboutUs", 1, {autoAlpha:1, repeat:1, repeatDelay:1,yoyo:true, ease: Linear.easeNone}, ">+1");
+
+IntrolScrolling.to(".Web_Band1", 3, {autoAlpha:1, yoyo:true, width:"63%",top:"49%", ease: Linear.easeNone}, ">");
+
+IntrolScrolling.set(".YSLC_LOGO1",{top: "6%",left:"8%", width:"7%"},">");
+IntrolScrolling.to(".YSLC_LOGO1, .Web_Contract", 3, {autoAlpha:1, yoyo:true, ease: Linear.easeNone}, "<");
+
+// IntrolScrolling.set(".SectionRelativeSize, .Storyboard---1, .Storyboard---2, .Storyboard---3, .Storyboard---4, .Storyboard---5, .StoryText---5, .Storyboard---6, .Storyboard---7, .Storyboard---8, .Storyboard---9, .Storyboard---10",{display: "none"},">");
 // IntrolScrolling.add(IntrolAnimated, 0, ">");
-//Img2
+
 
 
 
@@ -169,6 +177,7 @@ function LeavesTransition() {
     Schoolscrolling1.to(".schoolText2", 5,{opacity: 0, ease: Power1.easeIn, delay: 61},"0.0");
     Schoolscrolling1.to(".schoolText3", 5,{opacity: 0, ease: Power1.easeIn, delay: 63},"0.0");
     Schoolscrolling1.from(".schoolText4", 5,{opacity: 0, ease: Power1.easeIn, delay: 64},"0.0");
+    Schoolscrolling1.from("#SchoolMainBackground1", 5,{opacity: 0, ease: Power1.easeIn, delay: 2},"0.0");
 
 
 
@@ -191,43 +200,17 @@ function LeavesTransition() {
 
 
 
-
-// ----------------------------------//
-//                                   //
-//  Maincharacter Background [PIN}]  // Scene 2 & 3 Background**
-//                                   //
-// ----------------------------------//
-    function Transition2() {
-        var Transition2 = gsap.timeline({scrollTrigger:{reverse: false}});
-        Transition2.to(window, 1.2, {scrollTo:{y:".Storyboard---3", offsetY: -100, ease: Power4.easeOut}}, "0.0");
-        return Transition2;
-    }
-
-    let MainCharacterPresent1PIN = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".Storyboard---2",
-            start: "+=2500 center",
-            end: "+=3000 center",
-            toggleActions: "restart play reverse reset",
-            markers: {
-                startColor: "blue",
-                endColor: "blue"},
-        }
-    });
-    MainCharacterPresent1PIN.pause(Transition2, 0, "<-1");
-
-
-// ----------------------------------//
-//                                   //
-//     Maincharacter Background      // Scene 2 & 3 Background**
-//                                   //
-// ----------------------------------//
+// -------------------------------------//
+//                                      //
+//  Maincharacter LongScene Background  // Scene 2 & 3 Background**
+//                                      //
+// -------------------------------------//
     let MainCharacterPresentScrollingBackGround = gsap.timeline({
         scrollTrigger: {
             trigger: ".Storyboard---2",
-            start: "30% center",
+            start: "35% center",
             end: "+=3000 center",
-            toggleActions: "restart complete reverse pause",
+            toggleActions: "play complete reverse pause",
             scrub: 2.5,
             markers: {
                 startColor: "red",
@@ -246,49 +229,6 @@ function LeavesTransition() {
 
     MainCharacterPresentScrollingBackGround.from(".MC1Text3", {filter: "blur(16px)", opacity: 0, duration: 0.8, delay: 1},">-5.5")
     MainCharacterPresentScrollingBackGround.to(".MC1Text3", {y: innerHeight * -1, duration: 10},"<+=1")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
 // ----------------------------------//
 //                                   //
 //      Main Character LongScene     // Scene 2
@@ -299,7 +239,7 @@ function LeavesTransition() {
         trigger: ".Storyboard---2",
         start: "center center",
         end: "+=3000 center",
-        toggleActions: "restart complete reverse resume",
+        toggleActions: "restart complete reverse pause",
         scrub: 2.5,
         pin: true,
         markers: {
@@ -317,6 +257,8 @@ function LeavesTransition() {
     //Transitions
     MainCharacterPresentScrolling1.to(".MC1Gradient_Background",3,{opacity: 1, ease: Power1.easeIn},"<")
     MainCharacterPresentScrolling1.to(".MC1Gradient_Background",4,{top: "50%", yoyo:true},"<")
+
+
 
 
 // ----------------------------------//
@@ -366,6 +308,9 @@ function LeavesTransition() {
     MainCharacterPresentScrolling2.from(".MC2Text1",8,{opacity: 0}, "<+1")
     MainCharacterPresentScrolling2.from(".MC2Text2",8,{opacity: 0}, "<+5")
     MainCharacterPresentScrolling2.from(".MC2Text3",8,{opacity: 0}, "<+3")
+    
+    MainCharacterPresentScrolling2.to(".MC2Text1, .MC2Text2, .MC2Text3",4,{opacity: 0}, ">+5")
+    MainCharacterPresentScrolling2.from(".MC2Text3_1",8,{opacity: 0, width:"36%"}, ">")
 
 
 
@@ -413,7 +358,7 @@ function LeavesTransition() {
     MainCharacterPresentScrolling2.set(".ClassroomBackground1, .ClassroomBackground2",{duration: 0.0, opacity: 1}, ">")
     MainCharacterPresentScrolling2.to(".ClassroomBackground1",{duration: 10, top: "26%"}, "<")
     MainCharacterPresentScrolling2.to(".ClassroomBackground2",{duration: 10, top: "75%"}, "<")
-    MainCharacterPresentScrolling2.set(".illustration2_MC2Background, .illustration2-MC2, .illustration2-MCframe, .MC2Text1, .MC2Text2, .MC2Text3",{display:"none"}, ">")
+    MainCharacterPresentScrolling2.set(".illustration2_MC2Background, .illustration2-MC2, .illustration2-MCframe, .MC2Text1, .MC2Text2, .MC2Text3, .MC2Text3_1",{display:"none"}, ">")
 
     //Classroom Present
     MainCharacterPresentScrolling2.from(".MC2Text4",2,{opacity: 0}, ">")
@@ -550,48 +495,26 @@ function LeavesTransition() {
 //                                   //
 // ----------------------------------//
 
-// PIN
-function Transition4() {
-    var Transition4 = gsap.timeline({scrollTrigger:{}});
-    Transition4.to(window, 1.2, {scrollTo:{y:".Storyboard---5", offsetY: -150, ease: Power4.easeOut}}, "0.0");
-    return Transition4;
-}
-
-let BalconyScrollingTransition1 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".Storyboard---4",
-        start: "+=13600px center",
-        end: "+=13800px center",
-        toggleActions: "restart play reverse reset",
-        markers: {
-            startColor: "yellow",
-            endColor: "yellow"},
-    }
-});
-BalconyScrollingTransition1.pause(Transition4, 0, "<-1");
-
-let BalconyScrollingPIN = gsap.timeline({
+let BalconyScrollingPin = gsap.timeline({
     scrollTrigger: {
         trigger: ".Storyboard---4",
         start: "center center",
-        end: "+=13800px center",
+        end: "+=9000px center",
         pin: true,
-        markers: {
-            startColor: "blue",
-            endColor: "blue"}
     }
 });
+
 
 let BalconyScrolling1 = gsap.timeline({
     scrollTrigger: {
         trigger: ".Storyboard---4",
         toggleActions: "restart complete reverse pause",
         start: "center center",
-        end: "+=13800px center",
-        scrub: 1.3,
-        markers: {
-            startColor: "green",
-            endColor: "green"}
+        end: "+=9000px center",
+        scrub: 2.5,
+        // markers: {
+        //     startColor: "green",
+        //     endColor: "green"}
     }
 });
 //Settings before start
@@ -600,8 +523,9 @@ BalconyScrolling1.from(".Storyboard---4",1,{opacity: 0}, "<")
 BalconyScrolling1.to(".people1_body",{xPercent: 160, duration: 1.2, opacity: 1}, ">")
 BalconyScrolling1.fromTo("#BalconyBackgroundTransitionIn", {autoAlpha:1}, {autoAlpha:1}, '<');
 BalconyScrolling1.to('#TransitionIn', {xPercent: 186, duration: 2, ease: Power2.easeOut}, '<+.1')
+BalconyScrolling1.set("#BalconyBackgroundTransitionIn, #TransitionIn",{display:"none"}, '>');
 // People [idle]
-BalconyScrolling1.to(".people2_body",{xPercent: -100, duration: 5.6, opacity: 1,}, "<+0.1")
+BalconyScrolling1.to(".people2_body",{xPercent: -100, duration: 5.6, opacity: 1,}, "<-2")
 BalconyScrolling1.to(".people3_body",{xPercent: -180, duration: 8.6, opacity: 1.5,}, "<+0.7")
 BalconyScrolling1.from(".BalconyText1",0.56,{opacity:0}, "<")
 BalconyScrolling1.to(".people4_body",{xPercent: 110, duration: 5.6, }, "<+0.5")
@@ -616,7 +540,8 @@ BalconyScrolling1.set('#BalconyBackgroundTransitionFrame', {autoAlpha:1}, '>-5.5
 BalconyScrolling1.from('#TransitionCrop', {xPercent:100, duration:2, ease:'none'}, '<')
 //Hide people & Cchange blackground color[saveMemory]
 BalconyScrolling1.set(".people1_body, .people2_body, .people3_body, .people4_body, .Balcony_SCbody, .MC_body, #BalconyBackgroundTransitionIn, #TransitionIn, .balcony-Background, .BalconyText1, .BalconyText2",{display:"none"}, '>');
-BalconyScrolling1.to("body", 3,{backgroundColor:"#000000", ease:Power3.easeOut},"<");
+BalconyScrolling1.to("body", 3,{backgroundColor:"#000000", ease:Power3.easeOut},"<+1");
+BalconyScrolling1.from(".Activities2, .Activities3, .Activities4, .Activities1Text, .Activities2Text, .Activities3Text, .Activities4Text, .A3BadmintonPlayer, .LockerText1, .LockerText2, .LockerText3, .LockerText4, .LockerText5",{display:"none"}, '<');
 
 BalconyScrolling1.from(".Activities1Text",0.56,{opacity:0}, "<+1.2")
 BalconyScrolling1.to('#BalconyBackgroundTransitionFrame, .Activities1Text', {left: "-100%", duration: 1, delay: 1, ease: Power1.easeNone}, '<')
@@ -653,6 +578,7 @@ BalconyScrolling1.to(".LockerText5", {top: "58%",duration: 1, opacity:1, ease: P
 // //Outrol
 BalconyScrolling1.to(".LockerText4", {top: "45%",duration: 1.6, ease: Power2.easeOut},">")
 BalconyScrolling1.to(".LockerText5", {top: "60%",duration: 1.7, ease: Power3.easeOut},"<")
+BalconyScrolling1.to(".LockerText5", 5,{},">")
 
 
 //People & background Animated [walking]
@@ -732,26 +658,6 @@ BalconyScrolling1.to(".balcony-Background", {left: "-23%",duration: 20, ease: Po
 //          School Lockers           // Scene 5
 //                                   //
 // ----------------------------------//
-function Transition5() {
-    var Transition5 = gsap.timeline({scrollTrigger:{reverse: true}});
-    Transition5.to(window, 1.2, {scrollTo:{y:".Storyboard---6", offsetY: -100, ease: Power4.easeOut}}, "0.0");
-    return Transition5;
-}
-
-let LockerTransition1 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".Storyboard---5",
-        start: "+=5500px center",
-        end: "+=5800px center",
-        toggleActions: "restart play reverse reset",
-        markers: {
-            startColor: "yellow",
-            endColor: "yellow"},
-    }
-});
-LockerTransition1.pause(Transition5, 0, "<-1");
-
-
 let LockerScrolling1 = gsap.timeline({
     scrollTrigger: {
         trigger: ".Storyboard---5",
@@ -1060,9 +966,9 @@ ToiletTransition1.set("#toilet2_SCBody1",{transform: 'translateX(60%) translateY
 
 ToiletTransition1.set(".toilet_washing1",{filter: "contrast(500%)",filter: "brightness(2)"}, ">")
 ToiletTransition1.set(".toilet_BGOut1",{filter: "contrast(450%)",filter: "brightness(2)"}, ">")
-ToiletTransition1.to(".toilet_washing1", 0.6,{filter: "contrast(100%)",filter: "brightness(1)",ease: Power1.easeInOut}, ">")
-ToiletTransition1.to(".toilet_BGOut1", 0.3,{filter: "contrast(100%)",filter: "brightness(1)",ease: Power1.easeInOut}, "<")
-ToiletTransition1.to(".toilet_cameraFlash",0.5,{opacity: 0}, "<")
+ToiletTransition1.to(".toilet_washing1", 0.9,{filter: "contrast(100%)",filter: "brightness(1)",ease: Power1.easeInOut}, ">")
+ToiletTransition1.to(".toilet_BGOut1", 0.75,{filter: "contrast(100%)",filter: "brightness(1)",ease: Power1.easeInOut}, "<")
+ToiletTransition1.to(".toilet_cameraFlash",0.8,{opacity: 0}, "<")
 //Main Scene Mirror Reflections
 ToiletTransition1.to(".toilet_BGOut1, .toilet_BGIn1",15,{top: "120%", ease: Power1.easeOut}, ">")
 //Main character Text
@@ -1072,16 +978,18 @@ ToiletTransition1.to(".toilet_washing1",10,{opacity: 0, delay: 1}, "<+4")
 ToiletTransition1.from(".toiletText2",2,{opacity: 0, width:"15%"}, "<+1")
 
 //Zoom out
-ToiletTransition1.to(".toilet_BGOut1, .toilet_BGIn1",{left: "50%", duration: 3},">+7")
-ToiletTransition1.to(".toilet_BGOut1, .toilet_BGIn1",{top: "50%", duration: 4},"<")
-ToiletTransition1.to(".toilet_BGOut1, .toilet_BGIn1",{width: "85%", duration: 4},"<")
-ToiletTransition1.to(".toiletText1, .toiletText2",2,{opacity: 0}, "<")
+ToiletTransition1.to(".toilet_BGOut1, .toilet_BGIn1",{left: "50%", duration: 6},">+7")
+ToiletTransition1.to(".toilet_BGOut1, .toilet_BGIn1",{top: "50%", duration: 7},"<")
+ToiletTransition1.to(".toilet_BGOut1, .toilet_BGIn1",{width: "85%", duration: 7},"<")
+ToiletTransition1.to(".toiletText1, .toiletText2",2,{opacity: 0}, "<+5")
 //Main Scene  In [2]
 // ToiletTransition1.to(".toilet_BGOut1",3,{filter: "blur(5px)"},">")
-ToiletTransition1.from("#toiletSVGID1",3,{opacity: 0},">+1")
+ToiletTransition1.to(".toilet_BGOut1, .toilet_BGIn1",5,{opacity: 0},">+3")
+ToiletTransition1.from("#toiletSVGID1",4,{opacity: 0},"<")
+
 
 //Main Scene Secret Character In [2] //Character Animated
-ToiletTransition1.to("#toilet2_SCBody1",20,{transform: 'translateX(20%) translateY(10%)', width:"280"},">+1")
+ToiletTransition1.to("#toilet2_SCBody1",20,{transform: 'translateX(20%) translateY(10%)', width:"280"},">")
 ToiletTransition1.fromTo("#toilet2_SCBody1",{yPercent: 0, yoyo: true}, {yPercent: -0.56, duration: 0.9, yoyo: true, repeat: 10, repeatDelay: 0.3}, "<")
 ToiletTransition1.from(".toiletText3",5,{opacity: 0, width:"20%"}, "<")
 
@@ -1119,7 +1027,7 @@ let OnlineClass1 = gsap.timeline({
     scrollTrigger: {
         trigger: ".Storyboard---8",
         start: "center center",
-        end: "+=8000px center",
+        end: "+=9400px center",
         // end: "bottom center",
         toggleActions: "restart complete none reverse",
         pin: true,
@@ -1145,77 +1053,76 @@ OnlineClass1.set(".polaroid7",{top: "175%", left:"11%", width:"19.5%", rotation:
 OnlineClass1.set(".polaroid8",{top: "160%", left:"86%", width:"24%", rotation: -18},"0.0");
 OnlineClass1.set(".polaroid9",{top: "180%", left:"99%", width:"16%", rotation: 15},"0.0");
 
+
+
+
+
 //Paloroid Animated
-OnlineClass1.to(".polaroid1, .polaroid2, .polaroid3",2,{y:"-500%"})
-OnlineClass1.to(".polaroidText1",3.3,{y:"-500%", ease: Power1.easeOut},"<")
-OnlineClass1.to(".polaroidText2",4.6,{y:"-500%"},"<")
-// OnlineClass1.to(".polaroidText3",3.8,{y:"-1500%", ease: Power4.easeOut},">-3.4")
+OnlineClass1.to(".polaroid1, .polaroid2, .polaroid3",8,{y:"-500%"})
+OnlineClass1.to(".polaroidText1",12.6,{y:"-500%", ease: Power1.easeOut},"<")
+OnlineClass1.to(".polaroidText2",18.2,{y:"-500%"},"<")
 
-OnlineClass1.to(".polaroid4, .polaroid5, .polaroid6",3,{y:"-600%"},"<+0.3")
-OnlineClass1.to(".polaroid7, .polaroid8, .polaroid9",3,{y:"-600%"},"<+0.2")
+OnlineClass1.to(".polaroid4, .polaroid5, .polaroid6",12,{y:"-600%"},"<+1.2")
+OnlineClass1.to(".polaroid7, .polaroid8, .polaroid9",12,{y:"-600%"},"<+00.8")
 
-OnlineClass1.to(".polaroidText3",2.7,{y:"-1500%", ease: Power4.easeOut},"<+1.3")
-// OnlineClass1.to(".polaroidText3",2.7,{y:"-1500%", ease: Power4.easeOut},"<+0.83")
-
-
-
-
+OnlineClass1.to(".polaroidText3",10.4,{y:"-1500%", ease: Power4.easeOut},"<+4.6")
 
 //Phone In
-
-OnlineClass1.fromTo(".PhoneHolding_Background, .PhoneScreen_Background",{delay: 10, duration: 0.6, left: "120%", top: "60%"}, {width: "110%", left: "50%",  top: "4%"},">")
-OnlineClass1.from(".PhoneHolding_Background, .PhoneScreen_Background",{duration: 0.9, rotation: 24,}, "<-0.2")
-OnlineClass1.to(".Phone_MCText1", 1,{opacity: 1, ease: Power1.easeIn,},"<-0.8");
-OnlineClass1.to(".Phone_MCText2", 1,{opacity: 1, ease: Power1.easeIn,},"<+0.5");
+OnlineClass1.fromTo(".PhoneHolding_Background, .PhoneScreen_Background",{left: "120%", top: "60%"}, {duration: 2.2,width: "110%", left: "50%",  top: "4%"},">-5.5")
+OnlineClass1.from(".PhoneHolding_Background, .PhoneScreen_Background",{duration: 2.5, rotation: 24,}, "<-0.2")
+OnlineClass1.to(".Phone_MCText1", 3,{opacity: 1, ease: Power1.easeIn,},"<-0.8");
+OnlineClass1.to(".Phone_MCText2", 3,{opacity: 1, ease: Power1.easeIn,},"<+0.5");
 // 
 
-OnlineClass1.to(".Phone_MCText1, .Phone_MCText2", 1,{opacity: 0, ease: Power1.easeIn},">+1");
+OnlineClass1.to(".Phone_MCText1, .Phone_MCText2", 2,{opacity: 0, ease: Power1.easeIn},">+1");
 
 //Notifications [In]
-OnlineClass1.set("#PhoneNotification1, #PhoneNotification2, #PhoneNotification3",{y:"-10%", opacity: 1},">")
-OnlineClass1.to("#PhoneNotification1",{y:"0%", delay: 1, duration: 0.24, ease: Power1.easeOut},">")
-OnlineClass1.to("#PhoneNotification2",{y:"0%", delay: 1, duration: 0.24, ease: Power1.easeOut},">+0.7")
-OnlineClass1.to("#PhoneNotification3",{y:"0%", delay: 1, duration: 0.2, ease: Power1.easeOut},">-0.36")
+OnlineClass1.set("#PhoneNotification1, #PhoneNotification2, #PhoneNotification3",{y:"-10%", opacity: 1},"<")
+OnlineClass1.to("#PhoneNotification1",{y:"3%", delay: 1, duration: 0.24, ease: Power1.easeOut},">")
+OnlineClass1.to("#PhoneNotification2",{y:"3%", delay: 1, duration: 0.4, ease: Power1.easeOut},">+0.7")
+OnlineClass1.to("#PhoneNotification3",{y:"3%", delay: 1, duration: 0.6, ease: Power1.easeOut},">-0.36")
 
 OnlineClass1.to(".Phone_MCText1", 1,{opacity: 0, ease: Power1.easeIn},"<-0.4");
-OnlineClass1.to(".Phone_MCText3", 1,{opacity: 1, ease: Power1.easeIn,},"<-0.8");
+OnlineClass1.to(".Phone_MCText3", 2,{opacity: 1, ease: Power1.easeIn,},"<-0.8");
 OnlineClass1.to(".Phone_MCText2", 1,{opacity: 0, ease: Power1.easeIn},"<+0.5");
-OnlineClass1.to(".Phone_MCText4", 1,{opacity: 1, ease: Power1.easeIn,},"<");
+OnlineClass1.to(".Phone_MCText4", 2,{opacity: 1, ease: Power1.easeIn,},"<");
 
 
 //Notifications [Out]
-OnlineClass1.to("#PhoneNotification1, #PhoneNotification2, #PhoneNotification3",{y:"-10%", duration: 0.24, ease: Power1.easeOut},">+1.3");
+OnlineClass1.to("#PhoneNotification1, #PhoneNotification2, #PhoneNotification3",{y:"-10%", duration: 0.44, ease: Power1.easeOut},">+1.3");
 OnlineClass1.set("#PhoneNotification1, #PhoneNotification2, #PhoneNotification3",{display: "none"},">")
 //Phone Out
-OnlineClass1.to(".PhoneHolding_Background, .PhoneScreen_Background",{delay: 1, duration: 0.6, left: "120%", top: "60%"},">-0.94")
-OnlineClass1.to(".Phone_MCText3, .Phone_MCText4", 0.4,{opacity: 0, ease: Power1.easeIn},"<");
-OnlineClass1.to(".PhoneHolding_Background, .PhoneScreen_Background",{duration: 0.9, rotation: 24,}, "<-0.1")
+OnlineClass1.to(".PhoneHolding_Background, .PhoneScreen_Background",{delay: 1, duration: 1.2, left: "120%", top: "60%", ease: Power1.easeIn},">-0.1")
+OnlineClass1.to(".PhoneHolding_Background, .PhoneScreen_Background",{duration: 1.8, rotation: 24,}, "<+0.1")
+OnlineClass1.to(".Phone_MCText3, .Phone_MCText4", 0.8,{opacity: 0, ease: Power1.easeIn},"<");
 
 
-OnlineClass1.from(".customer1, .customer2",0.5,{opacity:0},">+1")
+// Customer Zoom [1]
+OnlineClass1.from(".customer1, .customer2",1,{opacity:0},">+3")
 OnlineClass1.to(".customer1",5,{top:"75%",left:"-50%",width: "200%", ease: Power1.easeIn},"<")
 OnlineClass1.to(".customer2",6,{top:"75%",left:"150%",width: "200%", ease: Power1.easeIn},"<")
-
-
+OnlineClass1.from(".customerText1",3,{opacity:0},"<")
+// [3 - 4 - 5]
 OnlineClass1.from(".customer3",1,{opacity:0},"<+1.8")
 OnlineClass1.to(".customer3",9,{top:"170%",left:"-100%",width: "340%", ease: Power1.easeIn},"<")
-
 
 OnlineClass1.to(".customer4",7,{top:"107%",left:"-60%",width: "94%", ease: Power1.easeIn},"<")
 OnlineClass1.to(".customer5",7,{top:"97%",left:"150%",width: "130%", ease: Power1.easeIn},"<")
 OnlineClass1.from(".customer4, .customer5",1,{opacity:0},"<+1.8")
-
-
+// [6 - 7]
 OnlineClass1.to(".customer6",7,{top:"170%", ease: Power1.easeIn},"<+1")
 OnlineClass1.to(".customer6",7,{width: "356%", ease: Power1.easeIn},"<")
 OnlineClass1.to(".customer6",7,{left:"-52%", ease: Power1.easeIn},"<")
+OnlineClass1.to(".customerText1",3,{opacity:0},"<")
 OnlineClass1.from(".customer6",1.3,{opacity:0, ease: Power1.easeIn},"<+1.5")
 
 OnlineClass1.from(".customer7",1.1,{opacity:0},"<")
+OnlineClass1.from(".customerText2",3,{opacity:0},"<")
 OnlineClass1.to(".customer7",6,{top:"179%",left:"150%",width: "350%", ease: Power1.easeIn},"<")
 
 
-OnlineClass1.to(".Storyboard---8",{delay: 5})
+OnlineClass1.set(".PhoneHolding_Background, .PhoneScreen_Background, .customer1, .customer2, .customer3, .customer4, .customer5, .customer6, .customer7", {display: "none"}, ">")
+OnlineClass1.to(".Storyboard---8",{delay: 3})
 
 
 
@@ -1234,8 +1141,9 @@ let EndingOfStoryPIN = gsap.timeline({
     scrollTrigger: {
         trigger: ".Storyboard---10",
         start: "center center",
-        end: "+=4000px center",
+        end: "+=9000px center",
         pin: true,
+        // pinSpacing: false,
         markers: {
             startColor: "red",
             endColor: "red"}
@@ -1246,53 +1154,172 @@ let EndingOfStory = gsap.timeline({
     scrollTrigger: {
         trigger: ".Storyboard---10",
         start: "center center",
-        end: "+=4000px center",
+        end: "+=8000px center",
         toggleActions: "play complete reverse resume",
-        scrub: 2.5,
+        scrub: 2.1,
         markers: {
-            startColor: "red",
-            endColor: "red"}
+            startColor: "white",
+            endColor: "white"}
         }
     });
     //Settings before animated
     EndingOfStory.set("body",{backgroundColor:"#262524"},"0.0");
     EndingOfStory.set(".Ending_window",{scale: 1.3, top:"40%"}, "0.0")
     EndingOfStory.set(".Ending_Body1",{width: "140%", top:"45%"}, "0.0")
+    EndingOfStory.set(".EndingMc_Text5",{rotation: -12, opacity: 0}, "0.0")
     //Animated
-    EndingOfStory.from(".EndingMc_Text1",{duration: 1, opacity: 0}, ">")
-    EndingOfStory.from(EndingGroup,{duration: 3, opacity: 0}, ">+3")
-    EndingOfStory.from(".Ending_Body1, .Ending_window",{duration: 3, opacity: 0}, "<")
-    EndingOfStory.to(".EndingMc_Text1",{duration: 1, opacity: 0}, "<")
+    EndingOfStory.from(".EndingMc_Text1",{duration: 5, opacity: 0}, ">")
+    EndingOfStory.from(EndingGroup,{duration: 15, opacity: 0}, ">+15")
+    EndingOfStory.from(".Ending_Body1, .Ending_window",{duration: 15, opacity: 0}, "<")
+    EndingOfStory.to(".EndingMc_Text1",{duration: 15, opacity: 0}, "<")
 
     //Zoom Out
     EndingOfStory.to(".Ending_window",15,{width:"80%", top:"50%", scale: 1}, "<-1")
     EndingOfStory.to(".Ending_Body1",15,{width: "80%", top:"50%"}, "<")
+    EndingOfStory.from(".Ending_windowbackground1",15,{top:"30%"}, "<")
+    EndingOfStory.from(".EndingMc_Text2",{duration: 8, opacity: 0}, "<")
 
-    EndingOfStory.from(".symbol1", 6,{opacity: 0, ease: Power1.easeIn},"<+2");
+    EndingOfStory.to(".EndingMc_Text5", 7, {y:"-=14", ease: Back.easeInOut},">+7");
+    EndingOfStory.to(".EndingMc_Text5", 1.3, {width:"11%", left:"77%",top:"57%", opacity:1},"<");
 
-    EndingOfStory.from(".symbol2", 5,{opacity: 0, ease: Power2.easeIn},">-3");
+    EndingOfStory.to("#EndingGroup, .EndingMc_Text5, .EndingMc_Text2",{duration: 7, opacity: 0}, ">+20")
 
+    //Scene [2]
+    EndingOfStory.from(".Ending2_BG1", {opacity: 0, filter: "blur(16px)", duration: 6},">")
+    EndingOfStory.from(".Ending2_BG1",{top:"55%", duration: 7, ease: Power1.easeOut}, "<")
+    EndingOfStory.from(".Ending2_img1", {opacity: 0, filter: "blur(16px)", duration: 6},">")
+    EndingOfStory.from(".Ending2_img1",{left:"60%", duration: 7, ease: Power1.easeOut}, "<")
+    // Text
+    EndingOfStory.from(".Ending2_Text1", {opacity: 0, filter: "blur(16px)", duration: 6},">")
+    EndingOfStory.from(".Ending2_Text1",{left:"38%", duration: 7, ease: Power1.easeOut}, "<")
 
+    EndingOfStory.from(".Ending2_img2", {opacity: 0, filter: "blur(16px)", duration: 6},">")
+    EndingOfStory.from(".Ending2_img2",{left:"60%", duration: 7, ease: Power1.easeOut}, "<")
+    EndingOfStory.from(".Ending2_img3", {opacity: 0, filter: "blur(16px)", duration: 6},">")
+    EndingOfStory.from(".Ending2_img3",{left:"60%", duration: 7, ease: Power1.easeOut}, "<")
+    EndingOfStory.from(".Ending2_img4", {opacity: 0, filter: "blur(16px)", duration: 6},">")
+    EndingOfStory.from(".Ending2_img4",{left:"60%", duration: 9, ease: Power1.easeOut}, "<")
+    //[Out]
+    EndingOfStory.to(".Ending2_BG1,.Ending2_img1,.Ending2_img2,.Ending2_img3,.Ending2_img4, .Ending2_Text1" ,{opacity: 0, duration: 5,},">")
 
-    EndingOfStory.to(".Ending_SCbody1",5,{top:"110%"}, ">+1")
-    EndingOfStory.from(".EndingMc_Text2",{duration: 8, opacity: 0}, "5")
+    //Scene [3]
+    EndingOfStory.from(".Ending3_img1", {opacity: 0, filter: "blur(16px)", duration: 6},">")
+    EndingOfStory.from(".Ending3_img1",{duration: 7, ease: Power1.easeOut}, "<")
+    //Text In
+    EndingOfStory.from(".Ending3_Text1", {opacity: 0, filter: "blur(5px)", duration: 6},">")
+    EndingOfStory.from(".Ending3_Text1",{left:"72%", duration: 9, ease: Power1.easeOut}, "<")
+    //Text Out
+    EndingOfStory.to(".Ending3_Text1",{duration: 5, opacity: 0}, ">+10")
+    EndingOfStory.to(".Ending3_img1",80,{top:"-290%", ease: Power0.easeOut},"<-2")
 
+    // Scene [4]
+    EndingOfStory.from(".Ending4_img1", {opacity: 0, filter: "blur(16px)", duration: 5},">-15")
+    EndingOfStory.from(".Ending4_img1",{top:"100%",width:"66%", duration: 12, ease: Power1.easeOut}, "<")
 
-    EndingOfStory.to(EndingGroup,{duration: 5, opacity: 0}, ">+4")
-    EndingOfStory.to(".EndingMc_Text2",{duration: 5, opacity: 0}, "<")
-
-    EndingOfStory.from(".EndingMc_Text3",{duration: 3, opacity: 0}, ">")
-    EndingOfStory.to(".EndingMc_Text3",{duration: 1, opacity: 0}, ">+3")
-    EndingOfStory.from(".EndingMc_Text4",{duration: 5, opacity: 0}, ">+3")
-    EndingOfStory.to(".EndingMc_Text4",{duration: 1, opacity: 0}, ">+3")
-
-
-    EndingOfStory.to(".Ending_Body1",{delay: 5}, ">")
     
+    EndingOfStory.from(".Ending4_Text1" ,{opacity: 0, duration: 5,},">-0.3")
+    EndingOfStory.from(".Ending4_Text2" ,{opacity: 0, duration: 7,},">+0.5")
+
+
+    EndingOfStory.to(".Ending4_img1, .Ending4_Text1, .Ending4_Text2", 9,{opacity: 0},">+7")
+    EndingOfStory.set(".Ending4_img1, .Ending4_Text1, .Ending4_Text2",{display:"none"}, ">")
+    // [Scene 5]
+    
+    EndingOfStory.from(".Ending5_Frame1",8, {opacity: 0},">")
+    EndingOfStory.from(".Ending5_illus1",8, {opacity: 0, filter: "blur(16px)"},">")
+    EndingOfStory.from(".Ending5_illus1",37, {top:"56%",left:"50%", width:"130%", ease: Power1.easeOut}, "<")
+    EndingOfStory.from(".Ending5_Text1",10,{opacity: 0},"<")
+    
+    EndingOfStory.from(".Ending5_illus2",12,{opacity: 0, filter: "blur(16px)"},"<+8")
+    EndingOfStory.from(".Ending5_illus2",34, {top:"50%",left:"48%", width:"110%", ease: Power1.easeOut}, "<")
+
+    //Body & Shadow
+    EndingOfStory.from(".Ending5_illusShadow1",6,{opacity: 0, filter: "blur(16px)"},"<+4")
+    EndingOfStory.from(".Ending5_illusShadow1",33, {top:"100%",left:"40%", width:"20%", ease: Power1.easeOut}, "<")
+    EndingOfStory.from(".Ending5_illusBody1",2,{opacity: 0},"<+3")
+    EndingOfStory.from(".Ending5_illusBody1",5,{filter: "blur(16px)"},"<")
+    EndingOfStory.from(".Ending5_illusBody1",30, {top:"110%",left:"10%"}, "<")
+    EndingOfStory.from(".Ending5_illusBody1",30, { width:"56%"}, "<")
+    EndingOfStory.to(".Ending5_Text1",6,{opacity: 0},"<")
+    EndingOfStory.from(".Ending5_Text2",10,{opacity: 0},"<")
+
+    EndingOfStory.from(".Ending5_illus3",5,{opacity: 0, filter: "blur(16px)"},"<+7.5")
+    EndingOfStory.from(".Ending5_illus3",27, {top:"50%",left:"47%", width:"90%", ease: Power1.easeOut}, "<")
+
+    EndingOfStory.from(".Ending5_illus4",8,{opacity: 0, filter: "blur(16px)"},"<+5")
+    EndingOfStory.from(".Ending5_illus4",21, {top:"40%",left:"49%", width:"100%", ease: Power1.easeOut}, "<")
+
+    EndingOfStory.from(".Ending5_illus5",4,{opacity: 0, filter: "blur(5px)"},"<-6")
+    EndingOfStory.from(".Ending5_illus5",24, {top:"40%",left:"49%", width:"110%", ease: Power1.easeOut}, "<-6")
+    
+    EndingOfStory.from(".Ending5_illus6",8,{opacity: 0, filter: "blur(10px)"},"<+7")
+    EndingOfStory.from(".Ending5_illus6",20, {top:"43%",left:"21.5%",width:"56%", ease: Power1.easeOut}, "<")
+
+    EndingOfStory.from(".Ending5_illus7",8,{opacity: 0, filter: "blur(10px)"},"<+3")
+    EndingOfStory.from(".Ending5_illus7",24, {top:"51%",left:"74.5%",width:"57%", ease: Power1.easeOut}, "<")
+    EndingOfStory.to(".Ending5_Text2",6,{opacity: 0},"<")
+    EndingOfStory.from(".Ending5_Text3",10,{opacity: 0},"<")
+    // [Out]
+
+
+    EndingOfStory.to(".Ending5_illus1, .Ending5_illus2, .Ending5_illus3, .Ending5_illus4, .Ending5_illus5, .Ending5_illus6, .Ending5_illus7, .Ending5_illusShadow1, .Ending5_illusBody1" ,{opacity: 0, duration: 5,},">+20")
+    EndingOfStory.to(".Ending5_Frame1, .Ending5_Text3",8, {opacity: 0},">")
+    EndingOfStory.set(".Ending5_Frame1, .Ending5_illus1, .Ending5_illus2, .Ending5_illus3, .Ending5_illus4, .Ending5_illus5, .Ending5_illus6, .Ending5_illus7, .Ending5_illusShadow1, .Ending5_illusBody1" ,{display:"none"},">")
+    EndingOfStory.set(".Ending2_BG1,.Ending2_img1,.Ending2_img2,.Ending2_img3,.Ending2_img4, .Ending2_Text1" ,{display: "none"},">")
+
+    // [Scene 6]
+    EndingOfStory.from(".Ending6_img1", {opacity: 0, filter: "blur(16px)", duration: 6},">")
+    EndingOfStory.from(".Ending6_img1",{duration: 7, ease: Power1.easeOut}, "<")
+    EndingOfStory.to(".Ending6_img1",100,{top:"-290%"},">-1")
+    //Scene [7]
+    EndingOfStory.from("#Ending7BG1, .Ending7_SCBody1",6,{opacity: 0, filter: "blur(16px)"},">+9")
+    // Transition [in]
+
+    EndingOfStory.from(".Ending7_Text1",10,{opacity: 0},">")
+
+    EndingOfStory.to(".Ending7Leaves", 35,{left:"150%", ease: Power1.easeIn},"<+5");
+    EndingOfStory.to(".Ending7Leaves", 35,{rotation: 840},"<");
+    EndingOfStory.to(".Ending7Leaves", 35,{width: "13%"},"<");
+    EndingOfStory.to(".Ending7Leaves", 35,{top: "60%"},"<");
+    EndingOfStory.to(".Ending7_SCBody1",3,{opacity: 0},"<+22")
+
+    EndingOfStory.to(".Ending7_Text1",6,{opacity: 0},"<")
+    EndingOfStory.from(".Ending7_Text2",10,{opacity: 0},">")
+    //[Out]
+    EndingOfStory.to("#Ending7BG1",35,{transform: 'translateX(-40%) translateY(0%)'},">+10")
+    EndingOfStory.to("#Ending7BG1",15,{transform: 'translateX(-45%) translateY(-50%)', ease: Power1.easeInOut},">+5")
+
+    EndingOfStory.to(".Ending7_Text2",6,{opacity: 0},"<")
+    EndingOfStory.from("#Ending7BG2",15,{transform: "translateX(45%) translateY(50%)", ease: Power1.easeInOut},"<+1.5")
+    EndingOfStory.from(".Ending7_Text3",10,{opacity: 0},">")
+    EndingOfStory.to(".Ending7_Text3",6,{opacity: 0},">+7")
+    EndingOfStory.from(".Ending7_Text4",10,{opacity: 0},">")
+    EndingOfStory.to(".Ending7_Text4",6,{opacity: 0},">+7")
+    EndingOfStory.from(".Ending7_Text5",10,{opacity: 0},">")
+    EndingOfStory.to(".Ending7_Text5",6,{opacity: 0},">+7")
+
+    EndingOfStory.to("#Ending7BG2",15,{transform: "translateX(-45%) translateY(-60%)", ease: Power1.easeInOut},">+5")
+
+    EndingOfStory.from("#Ending7_BG3Base",15,{transform: "translateX(0%) translateY(60%)", ease: Power1.easeInOut},"<+1.5")
+    EndingOfStory.from("#Ending7_BG3Body",15,{transform: "translateX(-25%) translateY(+70%)", ease: Power1.easeInOut},"<+1")
+    EndingOfStory.from(".Ending7_Text6", {opacity: 0, filter: "blur(5px)", duration: 6},">")
+    EndingOfStory.from(".Ending7_Text6",{left:"72%", duration: 9, ease: Power1.easeOut}, "<")
+    // [Out]
+    EndingOfStory.to("#Ending7_BG3Body",17,{opacity:0, ease: Power1.easeInOut},">")
+    EndingOfStory.to("#Ending7_BG3Base",15,{opacity:0, ease: Power1.easeInOut},"<+3.5")
+    EndingOfStory.to(".Ending7_Text6",{duration: 5, opacity: 0}, "<")
+    EndingOfStory.set("#EndingGroup, #Ending7ImgSVGID1, #Ending7_BG3Base, #Ending7_BG3Body, #Ending7BG1, #Ending7BG2, .Ending7_SCBody1, .Ending7_Text6" ,{display: "none"},">")
 
 
 
 
+
+    EndingOfStory.from(".Out_Frame1",{duration: 3, opacity: 0}, ">+10")
+    // EndingOfStory.to(".Out_Frame1",{duration: 1, opacity: 0}, ">+3")
+    // EndingOfStory.from(".EndingMc_Text4",{duration: 5, opacity: 0}, ">+3")
+    // EndingOfStory.to(".EndingMc_Text4",{duration: 1, opacity: 0}, ">+3")
+    EndingOfStory.to(".Ending_Body1",{delay: 5}, ">")
+    // [END]
 
 
     // $(document).ready(function(){

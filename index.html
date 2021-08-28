@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF=8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scaleable=no">
-    <title> AntiCyberBully </title>
+    <title> My Best School </title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:700' rel='stylesheet' type='text/css'>
@@ -37,7 +37,7 @@
 
 <body>
  <!-- ตรงนี้คือส่วนของ Loading Screen -->
-    <div class="overlay" id="loading">
+    <!-- <div class="overlay" id="loading">
       <div class="overlayDoor"></div>
       <div class="overlayContent">
         <div id="loader">
@@ -45,7 +45,7 @@
           <div id="hill"></div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
 
@@ -60,9 +60,16 @@
 
 <!--            Storyboard Scene [0]            -->  
   <section class="">
-    <div class="SectionRelativeSize Storyboard---Introl" style="z-index: 51;">
-      <img src="img/Scene1/leavesBackground.png" class="illustration-BackGround" style="visibility: unset;">
-      <img src="img/Scene0/YSLC_LOGO1.png" class="YSLC_LOGO1" style="z-index: 50;">
+    <div class="SectionRelativeSizeIntrol Storyboard---Introl" style="z-index: 51;">
+      <img src="img/Illus/StoryboardBG.png" class="illustration-BackGround" style="visibility: hidden;">
+      <a href="https://youtu.be/BxyIw_ivrgE" target="_blank"><img src="img/Scene0/YSLC_LOGO1.png" class="YSLC_LOGO1" style="z-index: 60;"></a>
+      <a href="https://youtu.be/BxyIw_ivrgE" target="_blank"><img src="img/Scene0/Web_Contract.png" class="Web_Contract" style="z-index: 60;"></a>
+      <img src="img/Scene0/Web_Band1.png" class="Web_Band1"  style="z-index: 40;">
+      <img src="img/Scene0/Web_AboutUs.png" class="Web_AboutUs"  style="z-index: 40;">
+
+      
+      <!-- <a href="https://youtu.be/BxyIw_ivrgE"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a> -->
+      <!-- <a class="photo" href="https://youtu.be/BxyIw_ivrgE" title="photo" id="photo">photo</a> -->
       <!-- Text -->
       <!-- <img src="img/Scene0/YSLC_LOGO1.png" class="YSLC_LOGO1" style="z-index: 50;"> -->
     </div>
@@ -78,7 +85,7 @@
   <!--            School Opening Scene          -->
   <section class="">
     <div class="SectionRelativeSize Storyboard---1" style="z-index: 52;">
-      <img src="img/Scene1/MainImageTest2.png" class="illustration-BackGround" style="visibility: unset;">
+      <img src="img/Scene1/MainBackground1.png" class="illustration-BackGround" style="visibility: unset;" id="SchoolMainBackground1">
       <!-- SchoolOpening -->
         <img src="img/Scene1/schoolBackground.png" class="illustration1-BackGround" id="SchoolOpeningBackground">
         <img src="img/Scene1/school1.png" class="illustration1-1" style="z-index: 50;">
@@ -89,7 +96,6 @@
         <!-- <img src="img/Scene1/school2.png" class="illustration1-2" id="SchoolOpening2" > -->
       <!-- Leaves Transition -->
         <img src="img/Scene1/LeavesTransition1.png" class="illustration1-Leaves">
-        <!-- <img src="img/Scene1/MainImageTest.png" class="illustration1-LeavesBackGround" style="z-index: -1;"> -->
       <!-- Leaves Particles -->
       <img src="img/Scene1/Particle1.png" class="LeavesParticle0" style="z-index: 52;">
       <img src="img/Scene1/Particle1.png" class="LeavesParticle1" style="z-index: 52;">
@@ -111,32 +117,10 @@
 
 
 
-
-  <!-- ฉากประกอบ -->
-  <section class="">
-    <div class="SectionRelativeSize Storyboard---0" style="z-index: 55;">
-      <img src="img/Scene1/leavesBackground.png" class="illustration-BackGround" style="visibility: visible;">
-    </div>
-  </section>
-  <!-- ฉากประกอบ -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <!--            Main Character Introduce Scene [1]         -->
   <section>
     <div class="SectionRelativeSize Storyboard---2" style="z-index: 51;">
-      <img src="img/Scene1/MainImageTest.png" class="illustration-BackGround" style="visibility: unset;">
+      <img src="img/Scene1/MainBackground1.png" class="illustration-BackGround" style="visibility: unset;">
       <img src="img/Scene2/MCBackground.png" class="illustration2-MC1Background">
       <img src="img/Scene2/MC1.png" class="illustration2-MC1" >
       <div>
@@ -163,6 +147,7 @@
       <img src="img/Scene2/MC2Text1.png" class="MC2Text1" style="z-index: 40;">
       <img src="img/Scene2/MC2Text2.png" class="MC2Text2" style="z-index: 40;">
       <img src="img/Scene2/MC2Text3.png" class="MC2Text3" style="z-index: 40;">
+      <img src="img/Scene2/MC2Text3_1.png" class="MC2Text3_1" style="z-index: 40;">
       <img src="img/Scene2/MC2Text4.png" class="MC2Text4" style="z-index: 50;">
       <img src="img/Scene2/MC2Text5.png" class="MC2Text5" style="z-index: 50;">
 
@@ -173,7 +158,7 @@
       <svg>
         <filter id="noise" x='0%' y='0%' width='100%' height='100%'>
             <feTurbulence baseFrequency="0.03 0.07" result="NOISE" numOctaves="1" id="ClassroomBandEffect"/>
-            <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="20" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+            <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="5" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
 
         </filter>
     </svg>
@@ -183,7 +168,8 @@
       <img src="img/Scene2/ClassroomBackground.png" class="ClassroomBackground2" style="z-index: 48;">
       <!-- Classroom present Transition [Sci-math]-->
       <img src="img/Scene2/ClassroomPresent1_Paper.png" class="ClassroomPresent1_Paper" style="z-index: 53;">
-      <img src="img/Scene2/ClassroomPresent1.png" class="illustration4-ClassroomPresent1" style="z-index: 52;">      
+      <img src="img/Scene2/ClassroomPresent1.png" class="illustration4-ClassroomPresent1" style="z-index: 52;">  
+      <img src="img/Scene2/ClassroomPresent1_BGout.png" class="illustration4-ClassroomPresent1" style="z-index: 54;">
       <!-- Classroom present Transition [English]-->
       <img src="img/Scene2/ClassroomPresent2.png" class="illustration4-ClassroomPresent2" style="z-index: 51;">
       <!-- Classroom present Transition [Music Education]-->
@@ -264,12 +250,12 @@
         <img src="img/Scene4/Activities3.png" class="Activities3" style="z-index: 51;">
         <img src="img/Scene4/Activities3BadmintonPlayer.png" class="A3BadmintonPlayer" style="z-index: 51;">
         <!-- Activities 4 -->
-        <img src="img/Scene4/Activities1.png" class="Activities4" style="z-index: 51;">
+        <img src="img/Scene4/Activities4.png" class="Activities4" style="z-index: 51;">
         <!-- School Activities Text[4] -->
         <img src="img/Scene4/Activities1Text.png" class="Activities1Text" style="z-index: 55;">
         <img src="img/Scene4/Activities2Text.png" class="Activities2Text" style="z-index: 55;">
         <img src="img/Scene4/Activities3Text.png" class="Activities3Text" style="z-index: 55;">
-        <img src="img/Scene4/Activities3Text.png" class="Activities4Text" style="z-index: 55;">
+        <img src="img/Scene4/Activities4Text.png" class="Activities4Text" style="z-index: 55;">
         
         <!--               School Activities Showcase Scene [4]               -->
 
@@ -378,7 +364,7 @@
       </svg>
 
       <!-- TEXT -->
-      <h9 class="canteenText1" style="z-index: 50;">โรงอาหาร</h9>
+      <!-- <h9 class="canteenText1" style="z-index: 50;">โรงอาหาร</h9> -->
       <!-- Main character Text  -->
       <img src="img/Scene6/canteen_MCText1.png" class="canteen_MCText1" style="z-index: 56;">
       <img src="img/Scene6/canteen_MCText2.png" class="canteen_MCText2" style="z-index: 56;">
@@ -433,19 +419,6 @@
 
 
 
-  <!-- ฉากประกอบ -->
-  <section class="">
-    <div class="SectionRelativeSize Storyboard---0" style="z-index: 55;">
-      <img src="img/Scene1/leavesBackground.png" class="illustration-BackGround" style="visibility: unset;">
-    </div>
-  </section>
-  <!-- ฉากประกอบ -->
-
-
-
-
-
-
 
 
 
@@ -455,18 +428,18 @@
   <section>
     <div class="SectionRelativeSize Storyboard---8" style="z-index: 56;">
       <!-- Online class Background -->
-      <img src="img/Scene1/MainImageTest2.png" class="illustration-BackGround" style="visibility:visible;">
+      <img src="img/Illus/StoryboardBG.png" class="illustration-BackGround" style="visibility:hidden;">
       <!-- polaroid -->
       <img src="img/Scene8/polaroid1.png" class="polaroid1" style="z-index: 51;">
       <img src="img/Scene8/polaroid2.png" class="polaroid2" style="z-index: 51;">
       <img src="img/Scene8/polaroid3.png" class="polaroid3" style="z-index: 51;">
 
-      <img src="img/Scene8/polaroid1.png" class="polaroid4" style="z-index: 51;">
-      <img src="img/Scene8/polaroid1.png" class="polaroid5" style="z-index: 51;">
+      <img src="img/Scene8/polaroid5.png" class="polaroid4" style="z-index: 51;">
+      <img src="img/Scene8/polaroid6.png" class="polaroid5" style="z-index: 51;">
       <img src="img/Scene8/polaroid4.png" class="polaroid6" style="z-index: 51;">
 
       <img src="img/Scene8/polaroid3.png" class="polaroid7" style="z-index: 51;">
-      <img src="img/Scene8/polaroid4.png" class="polaroid8" style="z-index: 51;">
+      <img src="img/Scene8/polaroid7.png" class="polaroid8" style="z-index: 51;">
       <img src="img/Scene8/polaroid1.png" class="polaroid9" style="z-index: 51;">
       <!-- polaroid text -->
       <h9 class="polaroidText1" style="z-index: 60;">ยังนึกถึงภาพจำเดิมๆอยู่รึเปล่า<br>ระบบการศึกษาแบบเก่าอันดีงาม<br>และห้องเรียนสุดคลาสสิค</h9>
@@ -474,7 +447,7 @@
       <h9 class="polaroidText3" style="z-index: 60;">แต่จะดีกับนักเรียนทุกคนจริงๆอย่างงั้นหรอ</h9>
       <!-- Phone Background -->
       <img src="img/Scene8/PhoneHolding_Background.png" class="PhoneHolding_Background">
-      <img src="img/Scene8/PhoneScreen2.png" class="PhoneScreen_Background" style="z-index: 50;">
+      <img src="img/Scene8/PhoneScreen2.png" class="PhoneScreen_Background" style="z-index: 60;">
 
       <svg id="PhoneSVGID1"viewBox="0 0 400 400" style="z-index: 55;">
         <defs>
@@ -497,12 +470,16 @@
 
 
       <img src="img/Scene8/customer1.png" class="customer1" style="z-index: 60;">
-      <img src="img/Scene8/customer1.png" class="customer2" style="z-index: 60;">
-      <img src="img/Scene8/customer1.png" class="customer3" style="z-index: 59;">
-      <img src="img/Scene8/customer1.png" class="customer4" style="z-index: 58;">
-      <img src="img/Scene8/customer1.png" class="customer5" style="z-index: 58;">
-      <img src="img/Scene8/customer1.png" class="customer6" style="z-index: 57;">
-      <img src="img/Scene8/customer1.png" class="customer7" style="z-index: 56;">
+      <img src="img/Scene8/customer2.png" class="customer2" style="z-index: 60;">
+      <img src="img/Scene8/customer3.png" class="customer3" style="z-index: 59;">
+      <img src="img/Scene8/customer4.png" class="customer4" style="z-index: 58;">
+      <img src="img/Scene8/customer5.png" class="customer5" style="z-index: 58;">
+      <img src="img/Scene8/customer6.png" class="customer6" style="z-index: 57;">
+      <img src="img/Scene8/customer7.png" class="customer7" style="z-index: 56;">
+
+      <img src="img/Scene8/customerText1.png" class="customerText1" style="z-index: 55;">
+      <img src="img/Scene8/customerText2.png" class="customerText2" style="z-index: 55;">
+      
       
     </div>
   </section>
@@ -514,50 +491,100 @@
 
 
 
-
-
-
-
-
-
-  <!-- ฉากประกอบ -->
-  <section class="">
-    <div class="SectionRelativeSize Storyboard---0" style="z-index: 55;">
-      <img src="img/Scene1/leavesBackground.png" class="illustration-BackGround" style="visibility: visible;">
-    </div>
-  </section>
-  <!-- ฉากประกอบ -->
-
-
-  <!--               School Slogan Ideas Scene [9]               -->
-<!--               School Slogan Ideas Scene [9]               -->
-
-
   <!-- Ending Scene [10] -->
   <section class="">
     <div class="SectionRelativeSize Storyboard---10" style="z-index: 50;">
+      <!-- Scene [1] -->
       <!-- Background -->
+      <img src="img/Illus/StoryboardBG.png" class="illustration-BackGround" style="visibility: hidden;">
       <div id="EndingGroup">
-        <img src="img/Scene2/MC2Background.png" class="illustration-BackGround" style="visibility: visible;">
         <img src="img/Scene10/window1.png" class="Ending_window" style="z-index: 54;">
         <img src="img/Scene10/windowframe.png" class="Ending_windowFrame" style="z-index: 60;">
+        <img src="img/Scene10/windowbackground1.png" class="Ending_windowbackground1" style="z-index: 50;">
         <!-- Illus -->
         <img src="img/Scene10/Body1.png" class="Ending_Body1" style="z-index: 56;">
         <!-- Secret character Symbol -->
-        <img src="img/Scene10/Ending_SCbody1.png" class="Ending_SCbody1" style="z-index: 53;">
-        <img src="img/Scene10/symbol1.png" class="symbol1" style="z-index: 55;">
-        <img src="img/Scene10/symbol2.png" class="symbol2" style="z-index: 55;">
+        <!-- <img src="img/Scene10/Ending_SCbody1.png" class="Ending_SCbody1" style="z-index: 53;"> -->
+        <!-- <img src="img/Scene10/symbol1.png" class="symbol1" style="z-index: 55; visibility: hidden;"> -->
+        <!-- <img src="img/Scene10/symbol2.png" class="symbol2" style="z-index: 55; visibility: hidden;"> -->
       <!-- Secret character Text -->
       </div>
       <img src="img/Scene10/EndingMc_Text1.png" class="EndingMc_Text1" style="z-index: 1;">
       <img src="img/Scene10/EndingMc_Text2.png" class="EndingMc_Text2" style="z-index: 56;">
-      <img src="img/Scene10/EndingMc_Text3.png" class="EndingMc_Text3" style="z-index: 56;">
-      <img src="img/Scene10/EndingMc_Text4.png" class="EndingMc_Text4" style="z-index: 56;">
+      <img src="img/Scene10/EndingMc_Text5.png" class="EndingMc_Text5" style="z-index: 52;">
+      <!-- Scene [2] -->
+      <img src="img/Scene10/Ending2_BG1.png" class="Ending2_BG1" style="z-index: 60;">
+      <img src="img/Scene10/Ending2_img1.png" class="Ending2_img1" style="z-index: 61;">
+      <img src="img/Scene10/Ending2_img2.png" class="Ending2_img2" style="z-index: 61;">
+      <img src="img/Scene10/Ending2_img3.png" class="Ending2_img3" style="z-index: 61;">
+      <img src="img/Scene10/Ending2_img4.png" class="Ending2_img4" style="z-index: 61;">
+      <img src="img/Scene10/Ending2_Text1.png" class="Ending2_Text1" style="z-index: 63;">
+
+      <!-- Scene [3] -->
+      <img src="img/Scene10/Ending3_img1.png" class="Ending3_img1" style="z-index: 65;">
+      <img src="img/Scene10/Ending3_Text1.png" class="Ending3_Text1" style="z-index: 66;">
+      
+      <!-- Scene [4] -->
+      <img src="img/Scene10/Ending4_img1.png" class="Ending4_img1" style="z-index: 65;">
+      <img src="img/Scene10/Ending4_text1.png" class="Ending4_Text1" style="z-index: 66;">
+      <img src="img/Scene10/Ending4_text2.png" class="Ending4_Text2" style="z-index: 66;">
+      <!-- Scene [5] -->
+      <!-- Frame-Background -->
+      <img src="img/Illus/StoryboardFrame4.png" class="Ending5_Frame1" style="z-index: 80;">
+      <!-- Illus -->
+      <img src="img/Scene10/Ending5_illusBody1.png" class="Ending5_illusBody1" style="z-index: 70;">
+      <img src="img/Scene10/Ending5_illusShadow1.png" class="Ending5_illusShadow1" style="z-index: 69;">
+      <img src="img/Scene10/Ending5_illus1.png" class="Ending5_illus1" style="z-index: 65;">
+      <img src="img/Scene10/Ending5_illus2.png" class="Ending5_illus2" style="z-index: 65;">
+      <img src="img/Scene10/Ending5_illus3.png" class="Ending5_illus3" style="z-index: 67;">
+      <img src="img/Scene10/Ending5_illus4.png" class="Ending5_illus4" style="z-index: 66;">
+      <img src="img/Scene10/Ending5_illus5.png" class="Ending5_illus5" style="z-index: 66;">
+      <img src="img/Scene10/Ending5_illus6.png" class="Ending5_illus6" style="z-index: 68;">
+      <img src="img/Scene10/Ending5_illus7.png" class="Ending5_illus7" style="z-index: 68;">
+      <img src="img/Scene10/Ending5_Text1.png" class="Ending5_Text1" style="z-index: 71;">
+      <img src="img/Scene10/Ending5_Text2.png" class="Ending5_Text2" style="z-index: 71;">
+      <img src="img/Scene10/Ending5_Text3.png" class="Ending5_Text3" style="z-index: 71;">
+      <!-- Scene [6] -->
+      <img src="img/Scene10/Ending6_img1.png" class="Ending6_img1" style="z-index: 65;">
+      <!-- Scene [7] -->
+      <svg id="Ending7ImgSVGID1"viewBox="0 0 400 400" style="z-index: 70;">
+        <defs>
+          <clipPath id="Ending7ImgClipPath">
+            <rect id="Ending7ImgRectID1" x="0" y="0" width="50%" height="100%" />
+          </clipPath>
+        </defs>
+
+        <g clip-path="url(#Ending7ImgClipPath)" style="z-index: 70;">
+          <image id="Ending7BG1" width="100%"  href="img/Scene10/Ending7_BG1.png"/>
+          <image id="Ending7BG2" width="100%"  href="img/Scene10/Ending7_BG2.png"/>
+
+          <image id="Ending7_BG3Base" width="100%" href="img/Scene10/Ending7_BG3Base.png"/>
+          <image id="Ending7_BG3Body" width="100%"  href="img/Scene10/Ending7_BG3Body.png"/>
+        </g>
+      </svg>
+      <img src="img/Scene10/Ending7_Text1.png" class="Ending7_Text1" style="z-index: 71;">
+      <img src="img/Scene10/Ending7_Text2.png" class="Ending7_Text2" style="z-index: 71;">
+
+      <img src="img/Scene10/Ending7_Text3.png" class="Ending7_Text3" style="z-index: 71;">
+      <img src="img/Scene10/Ending7_Text4.png" class="Ending7_Text4" style="z-index: 71;">
+      <img src="img/Scene10/Ending7_Text5.png" class="Ending7_Text5" style="z-index: 71;">
+      <img src="img/Scene10/Ending7_Text6.png" class="Ending7_Text6" style="z-index: 77;">
+      <!-- Body -->
+      <img src="img/Scene10/Ending7_SCBody1.png" class="Ending7_SCBody1" style="z-index: 71;">
+      <!-- Leaves Transition -->
+      <img src="img/Scene1/Particle1.png" class="Ending7Leaves" style="z-index: 72;">
     </div>
   </section>
   <!-- Ending Scene [10] -->
 
 
+
+  <!--               ED           -->
+  <section class="">
+    <div class="SectionRelativeSize Storyboard---0" style="z-index: 55;">
+      <img src="img/Scene11/Out_Frame1.png" class="illustration-BackGround" style="z-index: 68;">
+    </div>
+  </section>
 
 
 

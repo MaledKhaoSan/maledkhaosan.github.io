@@ -1,6 +1,6 @@
 /*-------------- Default Settings -------------- */
 body {
-    background-color: #ffffff;
+    background-color: #000000;
     font-family: 'Sarabun';
     /* background-image: url("/img/Scene1/MainImageTest.png");
     background-repeat: no-repeat;
@@ -19,6 +19,7 @@ section{
 
 */
 /*-------------- Storyboard scale -------------- */
+.SectionRelativeSizeIntrol,
 .SectionRelativeSize{
     position: relative;
     width: 100%;
@@ -67,6 +68,34 @@ svg{
     width: 19%;
     left: 50%;
     top: 45%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+.Web_Band1{
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    top: 52%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+.Web_Contract{
+    position: absolute;
+    width: 3%;
+    left: 93%;
+    top: 6%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+.Web_AboutUs{
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
     transform: translate(-50%, -50%);
 }
 /*---------------- Scene 1 scale ---------------- */
@@ -80,7 +109,7 @@ svg{
 /* illustration-BackGround */
 .illustration1-BackGround{
     left: -55%;
-    top: -27%;
+    top: -27.3%;
     width: 155%;
     position: absolute;
     background-repeat: no-repeat;
@@ -241,7 +270,7 @@ svg{
     width: 100%;
     top: 90%;
     left: 50%;
-    opacity: 0.5;
+    opacity: 0;
     transform: translate(-50%, -50%); 
 }
 
@@ -289,6 +318,13 @@ svg{
     width: 25%;
     top: 60%;
     left: 20%;
+    transform: translate(-50%, -50%); 
+}
+.MC2Text3_1{
+    position: absolute;
+    width: 37%;
+    top: 80%;
+    left: 50%;
     transform: translate(-50%, -50%); 
 }
 .MC2Text4{
@@ -1010,7 +1046,8 @@ svg{
 }
 .polaroidText1{
     /* font-size: 90px; */
-    color: rgb(247, 191, 39);
+    /* color: rgb(247, 191, 39); */
+    color:rgb(255, 255, 255);
     white-space: nowrap;
     font-family: "CSPraJad-bold";
     text-align: center;
@@ -1039,7 +1076,7 @@ svg{
 
 .polaroidText3{
     /* font-size: 90px; */
-    color: rgb(171, 39, 247);
+    color: rgb(255, 255, 255);
     white-space: nowrap;
     font-family: "CSPraJad-bold";
     text-align: center;
@@ -1137,6 +1174,14 @@ svg{
     left: 69%;
     transform: translate(-50%, -50%);
 }
+.customerText1,
+.customerText2{
+    position: absolute;
+    width: 43%;
+    top: 19%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /* Online Class */
 /*---------- Scene 8 Online Class ---------- */
 
@@ -1167,6 +1212,13 @@ svg{
 .Ending_window{
     position: absolute;
     width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Ending_windowbackground1{
+    position: absolute;
+    width: 80%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1204,9 +1256,7 @@ svg{
     transform: translate(-50%, -50%);
 }
 
-.EndingMc_Text1,
-.EndingMc_Text3,
-.EndingMc_Text4{
+.EndingMc_Text1{
     position: absolute;
     width: 35%;
     top: 50%;
@@ -1219,12 +1269,254 @@ svg{
     width: 8%;
     top: 35%;
     left: 63%;
-    filter: drop-shadow(5px 5px 4px #19191d);
     transform: translate(-50%, -50%);
 }
+
+.EndingMc_Text5{
+    position: absolute;
+    width: 10%;
+    top: 50%;
+    left: 80%;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    transform: rotate(20deg);
+    transform: translate(-50%, -50%);
+}
+/* Scene [2] */
+
+.Ending2_img1,
+.Ending2_img2,
+.Ending2_img3,
+.Ending2_img4{
+    position: absolute;
+    width: 39%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Ending2_Text1{
+    position: absolute;
+    width: 39%;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.Ending2_BG1{
+    position: absolute;
+    width: 39%;
+    top: 50%;
+    left: 50.3%;
+    transform: translate(-50%, -50%);
+}
+/* Scene [3] */
+.Ending3_img1{
+    position: absolute;
+    width: 30%;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, 1.5%);
+}
+
+.Ending3_Text1{
+    position: absolute;
+    width: 10%;
+    top: 28%;
+    left: 68.3%;
+    transform: translate(-50%, -50%);
+}
+/* Scene [4] */
+.Ending4_img1{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Ending4_Text1{
+    position: absolute;
+    width: 15%;
+    top: 40%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+}
+
+.Ending4_Text2{
+    position: absolute;
+    width: 15%;
+    top: 57%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+}
+/* Scene [5] */
+.Ending5_Frame1{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Ending5_illusBody1{
+    position: absolute;
+    width: 12%;
+    top: 67%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+.Ending5_illusShadow1{
+    position: absolute;
+    width: 20%;
+    top: 80%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+}
+.Ending5_illus1{
+    position: absolute;
+    width: 65%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Ending5_illus2{
+    position: absolute;
+    width: 65%;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+.Ending5_illus3{
+    position: absolute;
+    width: 72%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Ending5_illus4{
+    position: absolute;
+    width: 65%;
+    top: 44%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+}
+.Ending5_illus5{
+    position: absolute;
+    width: 71%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Ending5_illus6{
+    position: absolute;
+    width: 59%;
+    top: 42%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+}
+.Ending5_illus7{
+    position: absolute;
+    width: 61%;
+    top: 50%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+}
+
+.Ending5_Text1,
+.Ending5_Text2,
+.Ending5_Text3{
+    position: absolute;
+    width: 55%;
+    top: 80%;
+    left: 50%;
+    filter: drop-shadow(2px 1px 1px #000000);
+    transform: translate(-50%, -50%);
+}
+
+.Ending7_Text6{
+    position: absolute;
+    width: 10%;
+    top: 28%;
+    left: 65.3%;
+    transform: translate(-50%, -50%);
+}
+
+/* Scene [6] */
+.Ending6_img1{
+    position: absolute;
+    width: 39%;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 1.5%);
+}
+
+/* Scene [7] */
+.Ending7_Text1,
+.Ending7_Text2,
+.Ending7_Text3,
+.Ending7_Text4,
+.Ending7_Text5{
+    position: absolute;
+    width: 55%;
+    top: 80%;
+    left: 50%;
+    filter: drop-shadow(2px 1px 1px #000000);
+    transform: translate(-50%, -50%);
+}
+
+.Ending7_SCBody1{
+    position: absolute;
+    width:100%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+#Ending7ImgSVGID1{
+    position: absolute;
+    width:100%;
+    top: 0%;
+    left: 20%;
+    }
+
+#Ending7ImgRectID1{
+    position: absolute;
+    width:60%;
+    height:50%;
+    transform: translate(0%, 0%);
+    }
+
+#Ending7BG1{
+    width: 100%;
+    transform: translate(0%, 0%);
+    } 
+#Ending7BG2{
+    width: 100%;
+    transform: translate(-20%, 0%);
+    } 
+#Ending7_BG3Base{
+    width: 100%;
+    transform: translate(-20%, 0%);
+    } 
+#Ending7_BG3Body{
+    transform: translate(-20%, 0%);
+    } 
+
+    .Ending7Leaves{
+        width: 8%;
+        left: -50%;
+        top: 30%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
 /*---------- Scene 10 [] ---------- */
 
-
+.Out_Frame1{
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
 
 
 
