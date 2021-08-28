@@ -40,9 +40,9 @@ let IntrolScrolling = gsap.timeline({
         toggleActions: "play none none none",
         pin: true,
         // scrub: 1.5,
-        markers: {
-            startColor: "black",
-            endColor: "black"},
+        // markers: {
+        //     startColor: "black",
+        //     endColor: "black"},
 
     }
 });
@@ -104,9 +104,9 @@ function LeavesTransition() {
             toggleActions: "play complete reverse pause",
             pin: true,
             scrub: 1.5,
-            markers: {
-                startColor: "white",
-                endColor: "white"},
+            // markers: {
+            //     startColor: "white",
+            //     endColor: "white"},
 
         }
     });
@@ -212,9 +212,9 @@ function LeavesTransition() {
             end: "+=3000 center",
             toggleActions: "play complete reverse pause",
             scrub: 2.5,
-            markers: {
-                startColor: "red",
-                endColor: "red"}
+            // markers: {
+            //     startColor: "red",
+            //     endColor: "red"}
         }
     });
     MainCharacterPresentScrollingBackGround.to(".illustration2-MC1Background",{top: "-100%", duration: 10.0, yoyo:true})
@@ -242,9 +242,9 @@ function LeavesTransition() {
         toggleActions: "restart complete reverse pause",
         scrub: 2.5,
         pin: true,
-        markers: {
-            startColor: "red",
-            endColor: "red"}
+        // markers: {
+        //     startColor: "red",
+        //     endColor: "red"}
         }
     });
     // MainCharacterPresentScrolling1.to(".illustration2-MC1Background",{y: innerHeight * -3.25, yoyo:true})
@@ -274,9 +274,9 @@ function LeavesTransition() {
         toggleActions: "play complete reverse resume",
         scrub: 2.5,
         // pin: true,
-        markers: {
-            startColor: "blue",
-            endColor: "blue"}
+        // markers: {
+        //     startColor: "blue",
+        //     endColor: "blue"}
         }
     });
     //Settings BeforeStart
@@ -410,9 +410,9 @@ function LeavesTransition() {
             start: "+=4000px center",
             end: "+=4500px center",
             toggleActions: "restart play reverse reset",
-            markers: {
-                startColor: "blue",
-                endColor: "blue"},
+            // markers: {
+            //     startColor: "blue",
+            //     endColor: "blue"},
         }
     });
     MainCharacterPresent2Transition.pause(Transition3, 0, "<-1");
@@ -423,9 +423,9 @@ function LeavesTransition() {
         start: "center center",
         end: "+=4500px center",
         pin: true,
-        markers: {
-            startColor: "red",
-            endColor: "red"}
+        // markers: {
+        //     startColor: "red",
+        //     endColor: "red"}
         }
     });
 
@@ -666,9 +666,9 @@ let LockerScrolling1 = gsap.timeline({
         scrub: 1,
         toggleActions: "restart complete reverse pause",
         pin: true,
-        markers: {
-            startColor: "purple",
-            endColor: "purple"}
+    //     markers: {
+    //         startColor: "purple",
+    //         endColor: "purple"}
     }
 });
 
@@ -798,10 +798,10 @@ let LunchBreakPIN = gsap.timeline({
         start: "center center",
         end: "+=3500px center",
         pin: true,
-        markers: {
-            startColor: "red",
-            endColor: "red"}
-    }
+    //     markers: {
+    //         startColor: "red",
+    //         endColor: "red"}
+     }
 });
 
 
@@ -813,9 +813,9 @@ let LunchBreak1 = gsap.timeline({
         end: "+=3000px center", //top%
         scrub: 1.2,
         toggleActions: "restart complete reverse pause",
-        markers: {
-            startColor: "purple",
-            endColor: "purple"}
+    //     markers: {
+    //         startColor: "purple",
+    //         endColor: "purple"}
     }
 });
 // Settings Before start
@@ -954,9 +954,9 @@ let ToiletTransition1 = gsap.timeline({
         pin: true,
         scrub: 1.1,
         toggleActions: "restart play none reverse",
-        markers: {
-            startColor: "purple",
-            endColor: "purple"}
+    //     markers: {
+    //         startColor: "purple",
+    //         endColor: "purple"}
     }
 });
 //Settings Before start
@@ -1032,9 +1032,9 @@ let OnlineClass1 = gsap.timeline({
         toggleActions: "restart complete none reverse",
         pin: true,
         scrub: 0.8,
-        markers: {
-            startColor: "red",
-            endColor: "red"}
+    //     markers: {
+    //         startColor: "red",
+    //         endColor: "red"}
     }
 });
 // Settings Before start
@@ -1144,9 +1144,9 @@ let EndingOfStoryPIN = gsap.timeline({
         end: "+=9000px center",
         pin: true,
         // pinSpacing: false,
-        markers: {
-            startColor: "red",
-            endColor: "red"}
+        // markers: {
+        //     startColor: "red",
+        //     endColor: "red"}
         }
     });
 
@@ -1157,9 +1157,9 @@ let EndingOfStory = gsap.timeline({
         end: "+=8000px center",
         toggleActions: "play complete reverse resume",
         scrub: 2.1,
-        markers: {
-            startColor: "white",
-            endColor: "white"}
+        // markers: {
+        //     startColor: "white",
+        //     endColor: "white"}
         }
     });
     //Settings before animated
