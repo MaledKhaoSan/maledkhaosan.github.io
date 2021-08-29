@@ -1050,7 +1050,7 @@ let OnlineClass1 = gsap.timeline({
 // Settings Before start
 // OnlineClass1.set("body", {backgroundColor:"#262524", ease:Power3.easeOut},"0.0");
 OnlineClass1.set(".polaroidText1, .polaroidText2, .polaroidText3",{y:"+460%"},"0.0")
-OnlineClass1.set(".polaroid1, .polaroid2, .polaroid3, .polaroid4, .polaroid5, .polaroid6, .polaroid7, .polaroid8, .polaroid9",{opacity: 0},"0.0");
+OnlineClass1.set(".polaroid1, .polaroid2, .polaroid3, .polaroid4, .polaroid5, .polaroid6, .polaroid7, .polaroid8, .polaroid9",{opacity: 1},"0.0");
 //Paloroid Set [1]
 OnlineClass1.set(".polaroid1",{top: "154%", left:"50%", width:"18%", rotation: 29},"0.0"); //--> 9
 OnlineClass1.set(".polaroid2",{top: "165%", left:"16%", width:"20%", rotation: -5},"0.0"); //--> -19
