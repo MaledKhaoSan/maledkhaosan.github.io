@@ -1325,7 +1325,7 @@ let EndingOfStory = gsap.timeline({
 
 
 
-    EndingOfStory.from(".Out_Frame1",{duration: 3, opacity: 0}, ">+10")
+    // EndingOfStory.from(".Out_Frame1",{duration: 3, opacity: 0}, ">+10")
     // EndingOfStory.to(".Out_Frame1",{duration: 1, opacity: 0}, ">+3")
     // EndingOfStory.from(".EndingMc_Text4",{duration: 5, opacity: 0}, ">+3")
     // EndingOfStory.to(".EndingMc_Text4",{duration: 1, opacity: 0}, ">+3")
