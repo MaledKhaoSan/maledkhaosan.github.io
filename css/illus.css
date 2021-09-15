@@ -1059,6 +1059,7 @@ svg{
     width: 100%;
     top: 45%;
     left: 50%;
+    opacity: 0;
     transform: translate(-50%, -50%);
 }
 .polaroidText2{
@@ -1073,6 +1074,7 @@ svg{
     width: 100%;
     top: 69%;
     left: 50%;
+    opacity: 0;
     transform: translate(-50%, -50%);
 }
 
@@ -1088,6 +1090,7 @@ svg{
     width: 100%;
     top: 78%;
     left: 50%;
+    opacity: 0;
     transform: translate(-50%, -50%);
 }
 
