@@ -1068,7 +1068,8 @@ OnlineClass1.set(".polaroid1, .polaroid2, .polaroid3, .polaroid4, .polaroid5, .p
 
 
 //Paloroid Animated
-OnlineClass1.to(".polaroid1, .polaroid2, .polaroid3",8,{y:"-500%"})
+OnlineClass1.to(".polaroid1, .polaroid2, .polaroid3",8,{y:"-500%"},">")
+OnlineClass1.to(".polaroidText1, .polaroidText2, .polaroidText3, .polaroid1, .polaroid2, .polaroid3, .polaroid4, .polaroid5, .polaroid6, .polaroid7, .polaroid8, .polaroid9",1,{opacity: 1},"<");
 OnlineClass1.to(".polaroidText1",12.6,{y:"-500%", ease: Power1.easeOut},"<")
 OnlineClass1.to(".polaroidText2",18.2,{y:"-500%"},"<")
 
