@@ -6,9 +6,10 @@ $(document).ready(function() {
 
 	// Will wait for everything on the page to load.
 	$(window).bind('load', function() {
-		$('.overlay, body, img').addClass('loaded');
+		$('.overlay, body').addClass('loaded');
 		setTimeout(function() {
 			$('.overlay').css({'display':'none'})
 		}, 99000)
 	})
 })
+
