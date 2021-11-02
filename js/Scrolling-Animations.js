@@ -363,7 +363,7 @@ function LeavesTransition() {
     //Classroom Present
     MainCharacterPresentScrolling2.from(".MC2Text4",2,{opacity: 0}, ">")
     //CLassroom Band [In]
-    MainCharacterPresentScrolling2.to(document.getElementById('ClassroomBandEffect'), 30, {attr:{ baseFrequency: '0.0'}}, ">")
+    // MainCharacterPresentScrolling2.to(document.getElementById('ClassroomBandEffect'), 30, {attr:{ baseFrequency: '0.0'}}, ">")
     MainCharacterPresentScrolling2.from(".ClassroomBand1",25,{top:"150%", ease: Circ.easeOut}, "<")
     MainCharacterPresentScrolling2.from(".MC2Text5",8,{opacity: 0}, ">-10")
     //Classroom Present [In]
