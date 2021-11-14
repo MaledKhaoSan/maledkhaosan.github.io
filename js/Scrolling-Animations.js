@@ -7,7 +7,7 @@
     //         trigger: colorSection,
     //         start: "-50% bottom",
     //         end: "100% bottom",
-    //         toggleActions: 'play complete reverse pause',
+    //         toggleActions: 'play complete reverse resume',
     //         onEnter: () => gsap.to("body", {duration: 0.7, backgroundColor: colorSection.dataset.scrollcolor, overwrite: 'auto'}),
     //         onLeaveBack: () => gsap.to("body", {backgroundColor: prevColor, overwrite: 'auto'}),
     //         // markers: {
@@ -39,7 +39,7 @@ let IntrolScrolling = gsap.timeline({
         trigger: ".Storyboard---Introl",
         start: "top% center",
         end: "bottom center",
-        // toggleActions: "play complete pause reverse",
+        // toggleActions: "play complete resume reverse",
         toggleActions: "play none none none",
         pin: true,
         // scrub: 1.5,
@@ -104,7 +104,7 @@ function LeavesTransition() {
             trigger: ".Storyboard---1",
             start: "center center",
             end: "+=4000 center",
-            toggleActions: "play complete reverse pause",
+            toggleActions: "play complete reverse resume",
             pin: true,
             scrub: 1.5,
             // markers: {
@@ -211,9 +211,9 @@ function LeavesTransition() {
     let MainCharacterPresentScrollingBackGround = gsap.timeline({
         scrollTrigger: {
             trigger: ".Storyboard---2",
-            start: "35% center",
+            start: "center center",
             end: "+=3000 center",
-            toggleActions: "play complete reverse pause",
+            toggleActions: "play complete reverse resume",
             scrub: 2.5,
             // markers: {
             //     startColor: "red",
@@ -242,7 +242,7 @@ function LeavesTransition() {
         trigger: ".Storyboard---2",
         start: "center center",
         end: "+=3000 center",
-        toggleActions: "restart complete reverse pause",
+        toggleActions: "restart complete reverse resume",
         scrub: 2.5,
         pin: true,
         // markers: {
@@ -418,7 +418,7 @@ function LeavesTransition() {
             //     endColor: "blue"},
         }
     });
-    MainCharacterPresent2Transition.pause(Transition3, 0, "<-1");
+    MainCharacterPresent2Transition.resume(Transition3, 0, "<-1");
 
     let MainCharacterPresentScrollingPIN = gsap.timeline({
     scrollTrigger: {
@@ -511,7 +511,7 @@ let BalconyScrollingPin = gsap.timeline({
 let BalconyScrolling1 = gsap.timeline({
     scrollTrigger: {
         trigger: ".Storyboard---4",
-        toggleActions: "restart complete reverse pause",
+        toggleActions: "restart complete reverse resume",
         start: "center center",
         end: "+=9000px center",
         scrub: 2.5,
@@ -667,7 +667,7 @@ let LockerScrolling1 = gsap.timeline({
         start: "center center",
         end: "+=5500px center", //top%
         scrub: 1,
-        toggleActions: "restart complete reverse pause",
+        toggleActions: "restart complete reverse resume",
         pin: true,
     //     markers: {
     //         startColor: "purple",
@@ -815,7 +815,7 @@ let LunchBreak1 = gsap.timeline({
         start: "center center",
         end: "+=3000px center", //top%
         scrub: 1.2,
-        toggleActions: "restart complete reverse pause",
+        toggleActions: "restart complete reverse resume",
     //     markers: {
     //         startColor: "purple",
     //         endColor: "purple"}
@@ -933,7 +933,7 @@ LunchBreak1.to(".canteen_cameraFlash",1.56,{opacity: 1}, "<+1.41")
 //             endColor: "yellow"},
 //     }
 // });
-// ToiletOutrol.pause(Transition7, 0, "<-1");
+// ToiletOutrol.resume(Transition7, 0, "<-1");
 
 // function ToiletIntrol() {
 //     var ToiletIntrol = gsap.timeline({scrollTrigger:{reverse: true}});
@@ -1082,10 +1082,8 @@ OnlineClass1.to(".polaroid7, .polaroid8, .polaroid9",12,{y:"-600%"},"<+00.8")
 OnlineClass1.to(".polaroidText3",10.4,{y:"-1500%", ease: Power4.easeOut},"<+4.6")
 
 //Phone In
-// OnlineClass1.fromTo(".PhoneHolding_Background, .PhoneScreen_Background",{left: "120%", top: "60%"}, {duration: 2.2,width: "110%", left: "50%",  top: "4%"},">-5.5")
-
 OnlineClass1.from(".PhoneHolding_Background, .PhoneScreen_Background",{duration: 2.5, opacity:0}, "<+1")
-OnlineClass1.from(".PhoneHolding_Background, .PhoneScreen_Background",{duration: 2.5, rotation: 24,}, ">-0.2")
+// OnlineClass1.from(".PhoneHolding_Background, .PhoneScreen_Background",{duration: 2.5, rotation: 24,}, ">-0.2")
 OnlineClass1.to(".Phone_MCText1", 3,{opacity: 1, ease: Power1.easeIn,},"<-0.8");
 OnlineClass1.to(".Phone_MCText2", 3,{opacity: 1, ease: Power1.easeIn,},"<+0.5");
 // 
@@ -1108,8 +1106,7 @@ OnlineClass1.to(".Phone_MCText4", 2,{opacity: 1, ease: Power1.easeIn,},"<");
 OnlineClass1.to("#PhoneNotification1, #PhoneNotification2, #PhoneNotification3",{y:"-10%", duration: 0.44, ease: Power1.easeOut},">+1.3");
 OnlineClass1.set("#PhoneNotification1, #PhoneNotification2, #PhoneNotification3",{display: "none"},">")
 //Phone Out
-OnlineClass1.to(".PhoneHolding_Background, .PhoneScreen_Background",{delay: 1, duration: 1.2, left: "120%", top: "60%", ease: Power1.easeIn},">-0.1")
-OnlineClass1.to(".PhoneHolding_Background, .PhoneScreen_Background",{duration: 1.8, rotation: 24,}, "<+0.1")
+OnlineClass1.to(".PhoneHolding_Background, .PhoneScreen_Background",{duration: 1.8,opacity:0, rotation: 24,}, "<+0.1")
 OnlineClass1.to(".Phone_MCText3, .Phone_MCText4", 0.8,{opacity: 0, ease: Power1.easeIn},"<");
 
 
