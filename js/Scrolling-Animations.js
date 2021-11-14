@@ -1068,12 +1068,12 @@ OnlineClass1.set(".polaroid1, .polaroid2, .polaroid3, .polaroid4, .polaroid5, .p
 
 
 //Paloroid Animated
-OnlineClass1.to(".polaroid1, .polaroid2, .polaroid3",8,{y:"-500%"},">")
+OnlineClass1.to(".polaroid1, .polaroid2, .polaroid3, .polaroid5, .polaroid6",8,{y:"-500%"},">")
 OnlineClass1.to(".polaroidText1, .polaroidText2, .polaroidText3, .polaroid1, .polaroid2, .polaroid3, .polaroid4, .polaroid5, .polaroid6, .polaroid7, .polaroid8, .polaroid9",1,{opacity: 1},"<");
 OnlineClass1.to(".polaroidText1",12.6,{y:"-500%", ease: Power1.easeOut},"<")
 OnlineClass1.to(".polaroidText2",18.2,{y:"-500%"},"<")
 
-OnlineClass1.to(".polaroid4, .polaroid5, .polaroid6",12,{y:"-600%"},"<+1.2")
+OnlineClass1.to(".polaroid4",12,{y:"-600%"},"<+1.2")
 OnlineClass1.to(".polaroid7, .polaroid8, .polaroid9",12,{y:"-600%"},"<+00.8")
 
 OnlineClass1.to(".polaroidText3",10.4,{y:"-1500%", ease: Power4.easeOut},"<+4.6")
@@ -1081,7 +1081,8 @@ OnlineClass1.to(".polaroidText3",10.4,{y:"-1500%", ease: Power4.easeOut},"<+4.6"
 //Phone In
 // OnlineClass1.fromTo(".PhoneHolding_Background, .PhoneScreen_Background",{left: "120%", top: "60%"}, {duration: 2.2,width: "110%", left: "50%",  top: "4%"},">-5.5")
 
-OnlineClass1.from(".PhoneHolding_Background, .PhoneScreen_Background",{duration: 2.5, rotation: 24,}, "<-0.2")
+OnlineClass1.from(".PhoneHolding_Background, .PhoneScreen_Background",{duration: 2.5, opacity:0}, "<+1")
+OnlineClass1.from(".PhoneHolding_Background, .PhoneScreen_Background",{duration: 2.5, rotation: 24,}, ">-0.2")
 OnlineClass1.to(".Phone_MCText1", 3,{opacity: 1, ease: Power1.easeIn,},"<-0.8");
 OnlineClass1.to(".Phone_MCText2", 3,{opacity: 1, ease: Power1.easeIn,},"<+0.5");
 // 
