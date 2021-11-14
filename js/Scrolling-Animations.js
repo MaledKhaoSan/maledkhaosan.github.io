@@ -1057,7 +1057,7 @@ OnlineClass1.set(".polaroid3",{top: "150%", left:"84%", width:"20%", rotation: -
 //Paloroid Set [2]
 OnlineClass1.set(".polaroid4",{top: "150%", left:"2%", width:"16%", rotation: 19},"0.0");
 OnlineClass1.set(".polaroid5",{top: "190%", left:"16%", width:"18%", rotation: -29},"0.0");
-OnlineClass1.set(".polaroid6",{top: "130%", left:"92%", width:"24%", rotation: 5},"0.0");
+OnlineClass1.set(".polaroid6",{top: "140%", left:"92%", width:"24%", rotation: 5},"0.0");
 //Paloroid Set [3]
 OnlineClass1.set(".polaroid7",{top: "175%", left:"11%", width:"19.5%", rotation: 7},"0.0");
 OnlineClass1.set(".polaroid8",{top: "160%", left:"86%", width:"24%", rotation: -18},"0.0");
