@@ -158,7 +158,7 @@ svg{
 .illustration1-4,
 .illustration1-5{
     position: absolute;
-    width: 26%;
+    width: 70%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -462,7 +462,7 @@ svg{
     max-width: 100%;
     visibility:hidden;
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 0%;
   }
 .BalconyFrame{
