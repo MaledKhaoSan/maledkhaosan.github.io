@@ -1019,16 +1019,16 @@ svg{
 .PhoneHolding_Background{
     position: absolute;
     opacity: 1;
-    width: 95%;
-    top: 50%;
+    width: 110%;
+    top: 4%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .PhoneScreen_Background{
     position: absolute;
     opacity: 1;
-    width: 95%;
-    top: 50%;
+    width: 110%;
+    top: 4%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
