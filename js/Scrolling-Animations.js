@@ -1079,7 +1079,8 @@ OnlineClass1.to(".polaroid7, .polaroid8, .polaroid9",12,{y:"-600%"},"<+00.8")
 OnlineClass1.to(".polaroidText3",10.4,{y:"-1500%", ease: Power4.easeOut},"<+4.6")
 
 //Phone In
-OnlineClass1.fromTo(".PhoneHolding_Background, .PhoneScreen_Background",{left: "120%", top: "60%"}, {duration: 2.2,width: "110%", left: "50%",  top: "4%"},">-5.5")
+// OnlineClass1.fromTo(".PhoneHolding_Background, .PhoneScreen_Background",{left: "120%", top: "60%"}, {duration: 2.2,width: "110%", left: "50%",  top: "4%"},">-5.5")
+
 OnlineClass1.from(".PhoneHolding_Background, .PhoneScreen_Background",{duration: 2.5, rotation: 24,}, "<-0.2")
 OnlineClass1.to(".Phone_MCText1", 3,{opacity: 1, ease: Power1.easeIn,},"<-0.8");
 OnlineClass1.to(".Phone_MCText2", 3,{opacity: 1, ease: Power1.easeIn,},"<+0.5");
