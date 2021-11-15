@@ -8,6 +8,12 @@ body {
     width: 100%; */
 }
 
+*, body, html section{
+    margin: 0;
+    padding: 0;
+    
+  }
+  
 
 @media screen and (max-width: 992px){
     section{
@@ -33,6 +39,7 @@ section{
     padding: 0%;
     height: 100vh;
     position:relative;
+    max-height: 100%;
     
 }
 /*-------------- Default Settings -------------- */
