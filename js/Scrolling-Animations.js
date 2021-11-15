@@ -1068,7 +1068,7 @@ OnlineClass1.set(".polaroid3",{top: "150%", left:"84%", width:"20%", rotation: -
 //Paloroid Set [2]
 OnlineClass1.set(".polaroid4",{top: "150%", left:"2%", width:"16%", rotation: 19},"0.0");
 OnlineClass1.set(".polaroid5",{top: "190%", left:"16%", width:"18%", rotation: -29},"0.0");
-OnlineClass1.set(".polaroid6",{top: "140%", left:"92%", width:"24%", rotation: 5},"0.0");
+OnlineClass1.set(".polaroid6",{top: "160%", left:"92%", width:"24%", rotation: 5},"0.0");
 //Paloroid Set [3]
 OnlineClass1.set(".polaroid7",{top: "175%", left:"11%", width:"19.5%", rotation: 7},"0.0");
 OnlineClass1.set(".polaroid8",{top: "160%", left:"86%", width:"24%", rotation: -18},"0.0");
@@ -1079,7 +1079,7 @@ OnlineClass1.set(".polaroid1, .polaroid2, .polaroid3, .polaroid4, .polaroid5, .p
 
 
 //Paloroid Animated
-OnlineClass1.to(".polaroid1, .polaroid2, .polaroid3, .polaroid5, .polaroid6",8,{y:"-500%"},">")
+OnlineClass1.to(".polaroid1, .polaroid2, .polaroid3, .polaroid5, .polaroid6, .polaroid8",8,{y:"-500%"},">")
 OnlineClass1.to(".polaroidText1, .polaroidText2, .polaroidText3, .polaroid1, .polaroid2, .polaroid3, .polaroid4, .polaroid5, .polaroid6, .polaroid7, .polaroid8, .polaroid9",1,{opacity: 1},"<");
 OnlineClass1.to(".polaroidText1",12.6,{y:"-500%", ease: Power1.easeOut},"<")
 OnlineClass1.to(".polaroidText2",18.2,{y:"-500%"},"<")
