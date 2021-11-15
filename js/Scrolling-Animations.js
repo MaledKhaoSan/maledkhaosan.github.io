@@ -114,29 +114,25 @@ function LeavesTransition() {
         }
     });
     //Img2
-    Schoolscrolling1.to(".illustration1-1, .illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", 20, {rotationY: "+=180", transformOrigin:"up", transformStyle: "preserve-3d", ease: Power1.easeInOut});
-    Schoolscrolling1.to(".illustration1-1, .illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", {transformPerspective: 1900}, "<")
+
     Schoolscrolling1.to(".illustration1-1, .illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", {filter: "blur(0px)"}, "<+7")
     Schoolscrolling1.set(".illustration1-1", {display: "none"}, "<+3.5")
     //Img3
     Schoolscrolling1.set(".illustration1-2", {},"<-0.05");
 
-    Schoolscrolling1.to(".illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", 20, {rotationY: "+=180", transformOrigin:"up", transformStyle: "preserve-3d", ease: Power1.easeInOut});
-    Schoolscrolling1.to(".illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", {transformPerspective: 1900}, "<")
+
     Schoolscrolling1.to(".illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", {filter: "blur(0px)"}, "<+7")
     Schoolscrolling1.set(".illustration1-2", {display: "none"}, "<+3.5")
     //Img4
     Schoolscrolling1.set(".illustration1-2", {},"<-0.05");
     
-    Schoolscrolling1.to(".illustration1-3, .illustration1-4, .illustration1-5", 20, {rotationY: "+=180", transformOrigin:"up", transformStyle: "preserve-3d", ease: Power1.easeInOut});
-    Schoolscrolling1.to(".illustration1-3, .illustration1-4, .illustration1-5", {transformPerspective: 1900}, "<")
+
     Schoolscrolling1.to(".illustration1-3, .illustration1-4, .illustration1-5", {filter: "blur(0px)"}, "<+7")
     Schoolscrolling1.set(".illustration1-3", {display: "none"}, "<+3.5")
     //Img5
     Schoolscrolling1.set(".illustration1-2", {},"<-0.05");
 
-    Schoolscrolling1.to(".illustration1-4, .illustration1-5", 20, {rotationY: "+=180", transformOrigin:"up", transformStyle: "preserve-3d", ease: Power1.easeInOut});
-    Schoolscrolling1.to(".illustration1-4, .illustration1-5", {transformPerspective: 1900}, "<")
+
     Schoolscrolling1.to(".illustration1-4, .illustration1-5", {filter: "blur(0px)"}, "<+7")
     Schoolscrolling1.set(".illustration1-4", {display: "none"}, "<+3.5")
     
