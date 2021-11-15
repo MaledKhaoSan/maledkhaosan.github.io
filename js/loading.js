@@ -9,7 +9,17 @@ $(document).ready(function() {
 		$('.overlay, body').addClass('loaded');
 		setTimeout(function() {
 			$('.overlay').css({'display':'none'})
+			
 		}, 120000)
 	})
 })
 
+
+
+
+window.onload = function() {
+	if(!window.location.hash) {
+		window.location = window.location + '#loaded';
+		window.location.reload();
+	}
+}
