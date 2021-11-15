@@ -17,8 +17,16 @@
     //     });
     // });
 
+    var refresh = window.localStorage.getItem('refresh');
+    console.log(refresh);
+    if (refresh===null){
+        window.location.reload();
+        window.localStorage.setItem('refresh', "1");
+    }
+    
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
+  window.requestAnimationFrame();
 }
 
 // ----------------------------------//
@@ -114,25 +122,29 @@ function LeavesTransition() {
         }
     });
     //Img2
-
+    Schoolscrolling1.to(".illustration1-1, .illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", 20, {rotationY: "+=180", transformOrigin:"up", transformStyle: "preserve-3d", ease: Power1.easeInOut});
+    Schoolscrolling1.to(".illustration1-1, .illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", {transformPerspective: 1900}, "<")
     Schoolscrolling1.to(".illustration1-1, .illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", {filter: "blur(0px)"}, "<+7")
     Schoolscrolling1.set(".illustration1-1", {display: "none"}, "<+3.5")
     //Img3
     Schoolscrolling1.set(".illustration1-2", {},"<-0.05");
 
-
+    Schoolscrolling1.to(".illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", 20, {rotationY: "+=180", transformOrigin:"up", transformStyle: "preserve-3d", ease: Power1.easeInOut});
+    Schoolscrolling1.to(".illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", {transformPerspective: 1900}, "<")
     Schoolscrolling1.to(".illustration1-2, .illustration1-3, .illustration1-4, .illustration1-5", {filter: "blur(0px)"}, "<+7")
     Schoolscrolling1.set(".illustration1-2", {display: "none"}, "<+3.5")
     //Img4
     Schoolscrolling1.set(".illustration1-2", {},"<-0.05");
     
-
+    Schoolscrolling1.to(".illustration1-3, .illustration1-4, .illustration1-5", 20, {rotationY: "+=180", transformOrigin:"up", transformStyle: "preserve-3d", ease: Power1.easeInOut});
+    Schoolscrolling1.to(".illustration1-3, .illustration1-4, .illustration1-5", {transformPerspective: 1900}, "<")
     Schoolscrolling1.to(".illustration1-3, .illustration1-4, .illustration1-5", {filter: "blur(0px)"}, "<+7")
     Schoolscrolling1.set(".illustration1-3", {display: "none"}, "<+3.5")
     //Img5
     Schoolscrolling1.set(".illustration1-2", {},"<-0.05");
 
-
+    Schoolscrolling1.to(".illustration1-4, .illustration1-5", 20, {rotationY: "+=180", transformOrigin:"up", transformStyle: "preserve-3d", ease: Power1.easeInOut});
+    Schoolscrolling1.to(".illustration1-4, .illustration1-5", {transformPerspective: 1900}, "<")
     Schoolscrolling1.to(".illustration1-4, .illustration1-5", {filter: "blur(0px)"}, "<+7")
     Schoolscrolling1.set(".illustration1-4", {display: "none"}, "<+3.5")
     
@@ -238,7 +250,7 @@ function LeavesTransition() {
         trigger: ".Storyboard---2",
         start: "center center",
         end: "+=3000 center",
-        toggleActions: "restart complete reverse resume",
+        toggleActions: "restart complete complete complete",
         scrub: 2.5,
         pin: true,
         // markers: {
@@ -250,7 +262,7 @@ function LeavesTransition() {
     MainCharacterPresentScrolling1.to("body", 3,{backgroundColor:"#000000", ease:Power3.easeOut},"<");
     MainCharacterPresentScrolling1.from(".illustration2-MC1",{duration: 0.8})
     // MainCharacterPresentScrolling1.from(".illustration2-MC1",{top:"-200%" ,duration: 0.5, ease: Circ.easeOut, yoyo:true},"-=3.0");
-    MainCharacterPresentScrolling1.from(".illustration2-MC1",{scale:0, transformOrigin:"50% center",duration: 0.2, opacity: 0,ease: Circ.easeOut, yoyo:true},"-=3.0");
+    MainCharacterPresentScrolling1.from(".illustration2-MC1",{duration: 3.5, opacity: 0,ease: Circ.easeOut, yoyo:true},"-=3.0");
 
     MainCharacterPresentScrolling1.to(".illustration2-MC1",{duration: 8.5, opacity: 0, ease: Circ.easeOut, yoyo:true},"+=15.0");
     //Transitions
