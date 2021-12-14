@@ -1,0 +1,381 @@
+@font-face {
+    font-family: 'Ivy-Mode-Light';
+    src: local('Ivy Mode Light'), local('../FONTS/Ivy-Mode-Light'),
+        url('../FONTS/IvyMode-Light.woff2') format('woff2'),
+        url('../FONTS/IvyMode-Light.woff') format('woff'),
+        url('../FONTS/IvyMode-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Ivy-Mode-Thin';
+    src: local('Ivy Mode Thin'), local('../FONTS/Ivy-Mode-Thin'),
+        url('../FONTS/IvyMode-Thin.woff2') format('woff2'),
+        url('../FONTS/IvyMode-Thin.woff') format('woff'),
+        url('../FONTS/IvyMode-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'creattion-demo-regular';
+    src: local('Lobster Regular'), local('../FONTS/creattion-demo.regular'),
+        url('../FONTS/creattion-demo.regular.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'RiotSquadNF';
+    src: local('Lobster Regular'), local('../FONTS/RiotSquadNF'),
+        url('../FONTS/RiotSquadNF.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Herbert-regular';
+    src: local('Lobster Regular'), local('../FONTS/Herbert-regular'),
+        url('../FONTS/Herbert-regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'AvenirNextLTPro-Bold';
+    src: local('Lobster Regular'), local('../FONTS/AvenirNextLTPro-Bold'),
+        url('../FONTS/AvenirNextLTPro-Bold.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'RL-Unno-Trial';
+    src: local('RL-Unno-Trial'), local('../FONTS/RL-Unno-Trial'),
+        url('../FONTS/RL-Unno-Trial.otf') format('opentype');
+
+    font-style: normal;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+  @import url('http://fonts.cdnfonts.com/css/domaine-sans-display'); 
+  @import url('http://fonts.cdnfonts.com/css/cocomat');
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+  
+  
+  
+  .Works-Container-Header{ 
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .Works-Container-Header-text{
+  /* background-color: rgb(119, 156, 255); */
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.Works-Container-Header-text h5{
+    font-family: 'Herbert-regular';
+    font-size: 10em; 
+    font-weight: 700px;
+    letter-spacing: 0.07em;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+
+
+
+
+
+
+
+
+
+  .Works-Container-TimeLine-text{
+    /* background-color: rgb(119, 156, 255); */
+    position: absolute;
+    right: 0;
+    bottom: 1rem;
+    padding-right: 2rem;
+    margin: 0px;
+    /* transform: translate(-50%,-50%); */
+  }
+.Works-Container-TimeLine-text h1{
+    font-family: 'RL-Unno-Trial';
+    font-size: 2em; 
+    font-style: italic;
+    font-weight: 700%;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .myWorkDetailContainer{
+    position: absolute;
+    background-color: rgb(166, 255, 255);
+    width: 55vh;
+    height: 80vh;
+    left: 50%;
+    top: 55%;
+    /* overflow: hidden; */
+    transform: translate(0%,-50%);
+    /* width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;  */
+  }
+
+
+  .slideshow{ 
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+
+  .slideshow-item{ 
+    position:absolute;
+    width: inherit;
+    height: inherit;
+    /* opacity: 0; */
+  }
+
+
+  .slideshow-item img{ 
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    object-fit: cover;
+  }
+
+  .slideshow-item-text{
+      max-width: 45%;
+      position: absolute;
+      top: 78%;
+      left: 0%;
+      transform: translateY(-50%);
+      background-color: #1a1926dc;
+      color: white;
+      padding: 1rem 5rem;
+  }
+
+.slideshow-item-text h5{
+    font-size: 4rem;
+    font-family: 'Sarabun';
+    text-transform: uppercase;
+    margin: 2.5rem 0 .5rem 0;
+    padding-bottom: 1rem;
+}
+
+.slideshow-item-text .fa-github{
+    font-size: 4.4rem;
+    transform: translateY(-5%);
+    text-decoration: none;
+    color: #fff;
+    padding-left: 1.3rem;
+}
+.slideshow-item-text .fa-github:hover {
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+
+.slideshow-item-text h1{
+    font-size: 1em;
+    font-family: 'AvenirNextLTPro-Bold';
+    text-align: center;
+    letter-spacing: 1px;
+
+    margin: 0 0.5rem 0 0;
+    padding: 0.6em 1.1em 0.6em 1.1em;
+    border-radius: 7px;
+    width: max-content;
+    height: max-content;
+    color: #2c2c45;
+    background-color: #fff;
+}
+
+
+.slideshow-item-text p{
+    /* font-size: 1.6rem; */
+    font-size: 1.6rem;
+    /* font-size: calc(1vw - 1); */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    padding-top: 0.5rem;
+}
+
+
+@media screen and (max-width: 1000px){
+    .slideshow-item-text{
+        max-width: 50%;
+        padding: 2rem 1rem;
+    }
+
+
+    .slideshow-item-text h5{
+        font-size: 2.8rem;
+    }
+
+    .slideshow-item-text .fa-github{
+        font-size: 3.4rem;
+    }
+    .slideshow-item-text .fa-github:hover {
+        font-size: 3rem;
+    }
+
+    .slideshow-item-text p{
+        font-size: 1.6rem;
+    }
+
+    .slideshow-item-text h1{
+        font-size: 0.5rem;
+        margin: 0 0.5rem 0 0;
+        padding: 0.9em 1.3em 0.9em 1.3em;
+    }
+
+    .slideshow-item img{ 
+      padding: 1rem;
+    }
+
+
+
+}
+
+@media screen and (max-width: 767px){
+    .slideshow-item-text{
+        max-width: 100%;
+        padding: 1rem;
+        padding-bottom: 2rem;
+        top: initial;
+        bottom: 0;
+        transform: initial;
+
+    }
+
+
+    .slideshow-item-text h5{
+        font-size: 2rem;
+        margin-top: 0.2px;
+        padding-bottom: 1.1rem;
+    }
+
+    .slideshow-item-text .fa-github{
+        font-size: 2rem;
+        margin-top: 0.2px;
+    }
+    .slideshow-item-text .fa-github:hover {
+        font-size: 1.8rem;
+        margin-top: 0.2px;
+    }
+
+    .slideshow-item-text p{
+        font-size: 1.2rem;
+        padding-top: 0.8rem;
+    }
+
+    .slideshow-item-text h1{
+        font-size: 1.5px;
+        margin: 0 0.5rem 0 0;
+        padding: 0.4rem 0.3rem 0.4rem 0.3rem;
+        transform: translateY(-25%);
+    }
+
+    .slideshow-item img{ 
+      padding: 0;
+    }
+}
+
+  .myWorkImgContainer{ 
+    position: absolute;
+    background-color: azure;
+    width: 100%;
+    height: 50%;
+    left: 30%;
+    top: 0%;
+    overflow: hidden;
+    transform: translate(-50%,-50%);
+    /* width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;  */
+  }
+
+
+  .myWorkImgBox{ 
+    position: absolute;
+    background-color: azure;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;  */
+  }
+
+  .myWorkImgHeader{
+    white-space: pre;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: calc(25px + 6 * ((100vw - 320px) / 680));
+    font-weight: 200%;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    object-fit: scale-down;
+    color: rgb(0, 0, 0);
+
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+  }
+
+
+
+
+
+
+  /* Position the "next button" to the right */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 5vh;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 10;
+  }
+
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
