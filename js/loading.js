@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 if(window.location.hash) {
 	window.location.reload();
-	window.location = window.location + '#Loading';
+	window.location = window.location + '#unloading';
 }
 
 var refresh = window.localStorage.getItem('refresh');
