@@ -15,7 +15,7 @@ $(document).ready(function() {
 })
 
 if(window.location.hash) {
-	window.location = window.location + '#unloading';
+	window.location = window.location + '#loading';
 	window.location.reload();
 }
 
