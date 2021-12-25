@@ -15,8 +15,8 @@ $(document).ready(function() {
 })
 
 if(window.location.hash) {
-	window.location.reload();
 	window.location = window.location + '#unloading';
+	window.location.reload();
 }
 
 var refresh = window.localStorage.getItem('refresh');
@@ -34,6 +34,8 @@ window.onbeforeunload = function () {
 
 window.onload = function() {
 	if(window.location.hash) {
+
+	} else{
 		window.location = window.location + '#Introduction';
 		window.location.reload();
 	}
