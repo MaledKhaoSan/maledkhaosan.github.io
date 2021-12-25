@@ -14,7 +14,6 @@ $(document).ready(function() {
 	})
 })
 
-window.location.reload();
 var refresh = window.localStorage.getItem('refresh');
 console.log(refresh);
 if (refresh===null){
