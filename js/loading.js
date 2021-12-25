@@ -4,7 +4,7 @@ $(document).ready(function() {
 	setTimeout(function() {
 		$('.overlay, body').addClass('loaded');
 		window.location.reload();
-	}, 29000);
+	}, 2900);
 
 	// Will wait for everything on the page to load.
 	$(window).bind('load', function() {
@@ -13,7 +13,7 @@ $(document).ready(function() {
 			$('.overlay').css({'display':'none'})
 			window.location.reload();
 			
-		}, 29000)
+		}, 2900)
 	})
 })
 
