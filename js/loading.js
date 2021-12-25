@@ -14,6 +14,13 @@ $(document).ready(function() {
 	})
 })
 
+window.onload = function() {
+	if(window.location.hash) {
+		window.location = window.location + '#Introduction';
+		window.location.reload();
+	}
+}
+
 var refresh = window.localStorage.getItem('refresh');
 console.log(refresh);
 if (refresh===null){
@@ -24,12 +31,4 @@ if (refresh===null){
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
   window.requestAnimationFrame();
-}
-
-
-window.onload = function() {
-	if(window.location.hash) {
-		window.location.reload();
-		window.location = window.location + '#Introduction';
-	}
 }
