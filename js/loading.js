@@ -13,9 +13,12 @@ $(document).ready(function() {
 			
 		}, 2900)
 	})
-	window.location.reload();
 })
 
+if(!window.location.hash) {
+	window.location = window.location + '#Loading';
+	window.location.reload();
+}
 
 var refresh = window.localStorage.getItem('refresh');
 console.log(refresh);
