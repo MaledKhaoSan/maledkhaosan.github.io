@@ -10,15 +10,12 @@ $(document).ready(function() {
 		$('.overlay, body').addClass('loaded');
 		setTimeout(function() {
 			$('.overlay').css({'display':'none'})
-			
+			window.location.reload();
+			window.location = window.location + '#Loading';
 		}, 2900)
 	})
 })
 
-if(!window.location.hash) {
-	window.location = window.location + '#Loading';
-	window.location.reload();
-}
 
 var refresh = window.localStorage.getItem('refresh');
 console.log(refresh);
