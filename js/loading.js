@@ -11,7 +11,7 @@ $(document).ready(function() {
 		setTimeout(function() {
 			$('.overlay').css({'display':'none'})
 			window.location.reload();
-			window.location = window.location + '#Loading';
+			window.location = window.location + '#Loading11';
 		}, 2900)
 	})
 })
