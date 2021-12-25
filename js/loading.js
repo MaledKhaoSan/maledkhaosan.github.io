@@ -15,18 +15,13 @@ $(document).ready(function() {
 })
 
 
-const reloadUsingLocationHash = () => {
-	window.location.hash = "reload";
+
+window.onload = function() {
+	if(window.location.hash) {
+		window.location = window.location + '#Introduction';
+		window.location.reload();
+	}
 }
-window.onload = reloadUsingLocationHash();
-
-
-//window.onload = function() {
-//	if(window.location.hash) {
-//		window.location = window.location + '#Introduction';
-//		window.location.reload();
-//	}
-//}
 
 var refresh = window.localStorage.getItem('refresh');
 console.log(refresh);
