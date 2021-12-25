@@ -14,11 +14,7 @@ $(document).ready(function() {
 	})
 })
 
-if(window.location.hash) {
-	window.location = window.location + '#loading';
-	window.location.reload();
-}
-
+window.location.reload();
 var refresh = window.localStorage.getItem('refresh');
 console.log(refresh);
 if (refresh===null){
