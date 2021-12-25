@@ -34,14 +34,7 @@ window.onbeforeunload = function () {
 
 
 window.onload = function() {
-	//if(!window.location.hash) {
-	//	window.location = window.location + '#Introduction';
-	//	window.location.reload();
-	//}
-	
 	if(window.location.hash) {
-
-	} else {
 		window.location = window.location + '#Introduction';
 		window.location.reload();
 	}
