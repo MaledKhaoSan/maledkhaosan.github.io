@@ -21,6 +21,10 @@ window.onload = function() {
 	}
 }
 
+function Reloading() {
+	window.location.reload();
+}
+
 var refresh = window.localStorage.getItem('refresh');
 console.log(refresh);
 if (refresh===null){
