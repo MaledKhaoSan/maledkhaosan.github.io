@@ -50,6 +50,7 @@ IntrolScrolling.to(".YSLC_LOGO1", 1.5, {autoAlpha:1, repeat:1, repeatDelay:0.8,y
 
 IntrolScrolling.to(".Web_AboutUs", 1, {autoAlpha:1, repeat:1, repeatDelay:1,yoyo:true, ease: Linear.easeNone}, ">+1");
 
+IntrolScrolling.to(".main-button", 3.1, {autoAlpha:1, ease: Linear.easeNone}, ">");
 IntrolScrolling.to(".Web_Band1", 3, {autoAlpha:1, yoyo:true, width:"63%",top:"49%", ease: Linear.easeNone}, ">");
 
 IntrolScrolling.set(".YSLC_LOGO1",{top: "6%",left:"8%", width:"7%"},">");
