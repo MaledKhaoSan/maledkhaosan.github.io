@@ -133,6 +133,23 @@ svg{
     opacity: 0;
     transform: translate(-50%, -50%);
 }
+
+.main-button{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: 20%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.main-button h1{
+    text-align: center;
+    font-size:large;
+    color: white;
+}
 /*---------------- Scene 1 scale ---------------- */
 
 
